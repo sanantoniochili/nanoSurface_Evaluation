@@ -17,7 +17,7 @@ public class RandomGaussSurfaceGenerator {
 	double clx; // correlation length in x
 	double cly; // correlation length in y
 
-	private double[][] Z; 
+	private double[][] RandomRoughSurf; 
 	private double[][] meshGridX;
 	private double[][] meshGridY;
 
@@ -29,11 +29,27 @@ public class RandomGaussSurfaceGenerator {
     	this.cly = cly;
     	this.H   = h;
     	meshGrid();		  // init members meshGridX, meshGridY
-    	RandomSurfaceH(); // init member Z
+    	RandomSurfaceH(); // init member RandomRoughSurf
+        /*
+        * correlation of surface including convolution (faltung), inverse
+        * Fourier transform and normalizing prefactors
+        */
         double[][] GF = GaussianFilter(cly);
-        Complex[][] GF_Fourier = FTransform(GF);
 
-    	
+        FFT_2D fft2 = new FFT_2D(N,N);
+        
+        Complex[][] GF_cox = fft2.double2Complex(GF);
+        fft2.printArray(GF_cox);
+        Complex[][] GF_Fourier = fft2.FTransform(GF_cox);
+        fft2.printArray(GF_Fourier);
+
+        /*Complex[][] RRS_cox = fft2.double2Complex(RandomRoughSurf);
+        Complex[][] RRS_Fourier = fft2.FTransform(RRS_cox);
+
+        Complex[][] MultOut = new Complex[N][N];
+    	fft2.ComplexArray_mult(GF_Fourier,RRS_Fourier,MultOut);
+        Complex[][] Res = fft2.iFTransform(MultOut);*/
+
     }
 
     // isotropic surface
@@ -42,7 +58,7 @@ public class RandomGaussSurfaceGenerator {
     	this.Lr  = Lr;
     	this.clx = clx;
     	meshGrid();       // init members meshGridX, meshGridY
-    	RandomSurfaceH(); // init member Z
+    	RandomSurfaceH(); // init member RandomRoughSurf
         double[][] F = GaussianFilter();
 
     }
@@ -98,11 +114,11 @@ public class RandomGaussSurfaceGenerator {
     * multiplied by h (rms height)
     */
     private void RandomSurfaceH() {
-    	Z = new double[N][N];
+    	RandomRoughSurf = new double[N][N];
     	Random rand = new Random();
     	for (int i=0 ; i<N ; i++) {
     		for (int j=0 ; j<N ; j++) {
-    			Z[i][j] = H*rand.nextGaussian(); //standard normal distribution
+    			RandomRoughSurf[i][j] = H*rand.nextGaussian(); //standard normal distribution
     		}
     	}
 
@@ -139,45 +155,6 @@ public class RandomGaussSurfaceGenerator {
             }
         }
         return F;
-
-    }
-
-    /* 
-    * Correlation of non-isotropic surface 
-    * including convolution (faltung), 
-    * inverse Fourier transform and normalizing prefactors
-    *
-    * in order to compute 2-dimensional Fourier transform 
-    * of F we need to implement fft(fft(X).').' ,namely
-    * performing a 1D FFT on each row of X
-    * then do a 1D FFT on each column of the results
-    *
-    */
-    private Complex[][] FTransform(double[][] X) {
-        Complex[][] temp = new Complex[N][N]; // result of 1D FFT on each row of X
-        Complex[][] res = new Complex[N][N];
-        FFT fft = new FFT();
-
-        for (int i=0 ; i<N ; i++) { // for each row
-            Complex[] seq = new Complex[N];
-            for (int j=0 ; j<N ; j++) { // for each column
-                seq[j] = new Complex(X[i][j], 0);
-            }
-            temp[i] = fft.fft(seq);
-            //fft.show(temp[i], "temp = fft(seq)");
-        }
-        for (int j=0 ; j<N ; j++) { // for each column
-            Complex[] seq = new Complex[N];
-            for (int i=0 ; i<N ; i++) { // for each row
-                seq[i] = temp[i][j];
-            }
-            Complex[] res_col = fft.fft(seq); // 1D array column of result
-            for (int i=0 ; i<N ; i++) {
-                res[i][j] = res_col[i]; // save sequence to result column
-            }
-        }
-
-        return res;
 
     }
   
