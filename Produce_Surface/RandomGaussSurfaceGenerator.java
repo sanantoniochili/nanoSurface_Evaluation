@@ -33,7 +33,7 @@ public class RandomGaussSurfaceGenerator {
     	this.H   = args[2];
         this.clx = args[3];
         this.cly = cly;
-
+//System.out.println(this.cly);
     	meshGrid();		  // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
         double[][] GF = GaussianFilter(cly);
@@ -66,6 +66,7 @@ public class RandomGaussSurfaceGenerator {
                 Surf[i][j] = new Double( round(2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re(),4) );
             }
         }
+        printArray(Surf);
 
     }
 
@@ -108,6 +109,7 @@ public class RandomGaussSurfaceGenerator {
                 Surf[i][j] = new Double( round(2*rL/N/clx*Res[i][j].re(),4) );
             }
         }
+        printArray(Surf);
 
     }
 
@@ -164,7 +166,7 @@ public class RandomGaussSurfaceGenerator {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                F[i][j] = round(Math.exp( -( meshGridX[i][j]/(clx/2) + meshGridY[i][j]/(cly/2)) ),4);
+                F[i][j] = Math.exp( -( meshGridX[i][j]/(clx/2) + meshGridY[i][j]/(cly/2)) ); 
             }
         }
         return F;
@@ -181,7 +183,7 @@ public class RandomGaussSurfaceGenerator {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                F[i][j] = round(Math.exp( -( (meshGridX[i][j] + meshGridY[i][j])/(clx/2) ) ),4);
+                F[i][j] = Math.exp( -( (meshGridX[i][j] + meshGridY[i][j])/(clx/2) ) );
             }
         }
         return F;
