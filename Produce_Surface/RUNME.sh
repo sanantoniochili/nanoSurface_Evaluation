@@ -1,7 +1,6 @@
 #!/bin/bash  
-# bash script that compiles all .java files in current folder
-# updating classpath with .jar files in folder
-# and executes Main program
+# bash script that compiles all .java files passed as parameters
+# and executes provided .class files
 
 if [ -z $BASH_SOURCE ] ; then
     echo "--Script must be sourced (using '.' or 'source') and run under bash >= 3.0"

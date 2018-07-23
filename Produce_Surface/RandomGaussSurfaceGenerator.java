@@ -24,10 +24,10 @@ public class RandomGaussSurfaceGenerator {
 	private double[][] meshGridX;
 	private double[][] meshGridY;
 
-    public Double[][] F;    //height results
+    public Double[][] Surf;    //height results
 
 	// non-isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx, double cly) { //, double rL, dounble h, double clx, double cly) {
+    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx, double cly) throws ImError{ //, double rL, dounble h, double clx, double cly) {
     	this.N   = N;
     	this.rL  = rL;
     	this.clx = clx;
@@ -45,6 +45,7 @@ public class RandomGaussSurfaceGenerator {
 
         FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
         
+        // implementing ifft2(fft2(GF).*fft2(RRS)
         Complex[][] GF_cox = fft2.double2Complex(GF);
         Complex[][] GF_Fourier = fft2.FTransform(GF_cox);
 
@@ -54,26 +55,27 @@ public class RandomGaussSurfaceGenerator {
         Complex[][] MultOut = new Complex[N][N];
     	fft2.ComplexArray_mult(GF_Fourier,RRS_Fourier,MultOut);
         Complex[][] Res = fft2.iFTransform(MultOut);
+        // end
 
-        F = new Double[N][N];
+        Surf = new Double[N][N];
 
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                if( Res[i][j].im()!=0 ){
-                    System.out.println("Error of ifft");
-                    return;
-                }
-                F[i][j] = new Double( round(2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re(),4) );
+                if( Res[i][j].im()!=0 )
+                    throw new ImError();
+                Surf[i][j] = new Double( round(2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re(),4) );
             }
         }
 
     }
 
     // isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx) { //, double rL, dounble h, double clx, double cly) {
+    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx) throws ImError{ //, double rL, dounble h, double clx, double cly) {
     	this.N   = N;
-    	this.rL  = rL;
-    	this.clx = clx;
+        this.rL  = rL;
+        this.clx = clx;
+        this.H   = h;
+
     	meshGrid();       // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
         double[][] GF = GaussianFilter();
@@ -83,7 +85,30 @@ public class RandomGaussSurfaceGenerator {
         * Fourier transform and normalizing prefactors
         */
 
-      //  FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
+        FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
+
+        // implementing ifft2(fft2(GF).*fft2(RRS)
+        Complex[][] GF_cox = fft2.double2Complex(GF);
+        Complex[][] GF_Fourier = fft2.FTransform(GF_cox);
+
+        Complex[][] RRS_cox = fft2.double2Complex(RandomRoughSurf);
+        Complex[][] RRS_Fourier = fft2.FTransform(RRS_cox);
+
+        Complex[][] MultOut = new Complex[N][N];
+        fft2.ComplexArray_mult(GF_Fourier,RRS_Fourier,MultOut);
+        Complex[][] Res = fft2.iFTransform(MultOut);
+        // end
+
+        Surf = new Double[N][N];
+
+        for (int i=0 ; i<N ; i++) {
+            for (int j=0 ; j<N ; j++) {
+                if( Res[i][j].im()!=0 )
+                    throw new ImError();
+                Surf[i][j] = new Double( round(2*rL/N/clx*Res[i][j].re(),4) );
+            }
+        }
+        printArray(Surf);
 
 
     }
@@ -185,6 +210,9 @@ public class RandomGaussSurfaceGenerator {
         System.out.println(" ");
     }
 
+    /*
+    * round double value to n decimals
+    */ 
     private static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
      
