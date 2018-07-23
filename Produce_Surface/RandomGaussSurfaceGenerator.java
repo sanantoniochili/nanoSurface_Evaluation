@@ -1,6 +1,9 @@
 import java.util.*;
 import java.io.*;
 import java.lang.Math;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 
 public class RandomGaussSurfaceGenerator {
 /*
@@ -12,7 +15,7 @@ public class RandomGaussSurfaceGenerator {
 */
 
 	Integer N;  // number of surface points (along square side)
-	double Lr;  // length of surface (along square side)
+	double rL;  // length of surface (along square side)
 	double H;   // rms height
 	double clx; // correlation length in x
 	double cly; // correlation length in y
@@ -21,45 +24,67 @@ public class RandomGaussSurfaceGenerator {
 	private double[][] meshGridX;
 	private double[][] meshGridY;
 
+    public Double[][] F;    //height results
+
 	// non-isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double Lr, double h, double clx, double cly) { //, double rL, dounble h, double clx, double cly) {
+    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx, double cly) { //, double rL, dounble h, double clx, double cly) {
     	this.N   = N;
-    	this.Lr  = Lr;
+    	this.rL  = rL;
     	this.clx = clx;
     	this.cly = cly;
     	this.H   = h;
+
     	meshGrid();		  // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
+        double[][] GF = GaussianFilter(cly);
+
         /*
         * correlation of surface including convolution (faltung), inverse
         * Fourier transform and normalizing prefactors
         */
-        double[][] GF = GaussianFilter(cly);
 
-        FFT_2D fft2 = new FFT_2D(N,N);
+        FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
         
         Complex[][] GF_cox = fft2.double2Complex(GF);
-        fft2.printArray(GF_cox);
         Complex[][] GF_Fourier = fft2.FTransform(GF_cox);
-        fft2.printArray(GF_Fourier);
 
-        /*Complex[][] RRS_cox = fft2.double2Complex(RandomRoughSurf);
+        Complex[][] RRS_cox = fft2.double2Complex(RandomRoughSurf);
         Complex[][] RRS_Fourier = fft2.FTransform(RRS_cox);
 
         Complex[][] MultOut = new Complex[N][N];
     	fft2.ComplexArray_mult(GF_Fourier,RRS_Fourier,MultOut);
-        Complex[][] Res = fft2.iFTransform(MultOut);*/
+        Complex[][] Res = fft2.iFTransform(MultOut);
+
+        F = new Double[N][N];
+
+        for (int i=0 ; i<N ; i++) {
+            for (int j=0 ; j<N ; j++) {
+                if( Res[i][j].im()!=0 ){
+                    System.out.println("Error of ifft");
+                    return;
+                }
+                F[i][j] = new Double( round(2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re(),4) );
+            }
+        }
 
     }
 
     // isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double Lr, double h, double clx) { //, double rL, dounble h, double clx, double cly) {
+    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx) { //, double rL, dounble h, double clx, double cly) {
     	this.N   = N;
-    	this.Lr  = Lr;
+    	this.rL  = rL;
     	this.clx = clx;
     	meshGrid();       // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
-        double[][] F = GaussianFilter();
+        double[][] GF = GaussianFilter();
+
+        /*
+        * correlation of surface including convolution (faltung), inverse
+        * Fourier transform and normalizing prefactors
+        */
+
+      //  FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
+
 
     }
 
@@ -67,46 +92,28 @@ public class RandomGaussSurfaceGenerator {
     * create matrices X,Y of absolute values where 
     * X: same vector in each row
     * Y: same vector in each column
-    * of evenly spaced points between -Lr/2 and Lr/2
+    * of evenly spaced points between -rL/2 and rL/2
     */
     private void meshGrid() {	
-    	double begin = -Lr/(double)2;
-    	double end = Lr/(double)2;
+    	double begin = -rL/2;
+    	double end = rL/2;
   
     	meshGridX = new double[N][N];
     	meshGridY = new double[N][N];
 
-    	double count = begin;
-    	double step = ( end-begin ) / (double)N; //find space between points
+        Linspace linspace = new Linspace(begin,end,N);
+        double[] L = linspace.op();
 		
 		for (int j=0 ; j<N ; j++) {	
 			for (int i=0 ; i<N ; i++) {
-				meshGridX[i][j] = Math.abs(count); //all rows of same column with the same point
-				if( count>end ){ 	   	           //don't exceed end point
-					meshGridX[i][j] = Math.abs(end);
-					break;
-				}
+				meshGridX[i][j] = Math.abs(L[j]); //all rows of same column with the same point
 			}
-			count += step;	//next column with new point
 		}
-		count = begin;
 		for (int i=0 ; i<N ; i++) {	
 			for (int j=0 ; j<N ; j++) {
-				meshGridY[i][j] = Math.abs(count); //all columns of same row with the same point
-				if( count>end ){		           //don't exceed end point
-					meshGridY[i][j] = Math.abs(end);
-					break;
-				}
+				meshGridY[i][j] = Math.abs(L[i]); //all columns of same row with the same point
 			}
-			count += step;	//next column with new point
 		}
-		/*for (int i =0;i<N ; i++) {
-			for (int j=0;j<N ;j++ ) {
-				System.out.print(meshGridX[i][j]+" ");
-			}
-			System.out.println(" ");
-		}*/
-
     }
 
     /*
@@ -118,7 +125,7 @@ public class RandomGaussSurfaceGenerator {
     	Random rand = new Random();
     	for (int i=0 ; i<N ; i++) {
     		for (int j=0 ; j<N ; j++) {
-    			RandomRoughSurf[i][j] = H*rand.nextGaussian(); //standard normal distribution
+    			RandomRoughSurf[i][j] = H*round(rand.nextGaussian(), 4); //standard normal distribution
     		}
     	}
 
@@ -134,7 +141,7 @@ public class RandomGaussSurfaceGenerator {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                F[i][j] = Math.exp( -(Math.abs( meshGridX[i][j] )/(clx/2)+Math.abs( meshGridY[i][j] )/(cly/2)) );
+                F[i][j] = round(Math.exp( -( meshGridX[i][j]/(clx/2) + meshGridY[i][j]/(cly/2)) ),4);
             }
         }
         return F;
@@ -151,11 +158,39 @@ public class RandomGaussSurfaceGenerator {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                F[i][j] = Math.exp( -((Math.abs( meshGridX[i][j] )+Math.abs( meshGridY[i][j] ))/(clx/2)) );
+                F[i][j] = round(Math.exp( -( (meshGridX[i][j] + meshGridY[i][j])/(clx/2) ) ),4);
             }
         }
         return F;
 
+    }
+
+    public void printArray(double[][] X) {
+        for (int i=0 ; i<N ; i++) {
+            for (int j=0 ; j<N ; j++) {
+                System.out.print(X[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+    }
+
+    public void printArray(Double[][] X) {
+        for (int i=0 ; i<N ; i++) {
+            for (int j=0 ; j<N ; j++) {
+                System.out.print(X[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+    }
+
+    private static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+     
+        BigDecimal bd = new BigDecimal(Double.toString(value));
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
   
 }
