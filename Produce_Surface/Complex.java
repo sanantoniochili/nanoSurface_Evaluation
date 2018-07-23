@@ -27,7 +27,12 @@
  *
  ******************************************************************************/
 
+/* version with rounded doubles to 4 decimals  */
+
 import java.util.Objects;
+import java.lang.Math;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Complex {
     private final double re;   // the real part
@@ -35,8 +40,10 @@ public class Complex {
 
     // create a new object with the given real and imaginary parts
     public Complex(double real, double imag) {
-        re = real;
-        im = imag;
+        // original: re = real;
+        // original: im = imag;
+        re = round(real,4);
+        im = round(imag,4);
     }
 
     // return a string representation of the invoking Complex object
@@ -168,6 +175,14 @@ public class Complex {
         StdOut.println("conj(a)      = " + a.conjugate());
         StdOut.println("|a|          = " + a.abs());
         StdOut.println("tan(a)       = " + a.tan());
+    }
+
+    private static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+     
+        BigDecimal bd = new BigDecimal(Double.toString(value));
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 
 }
