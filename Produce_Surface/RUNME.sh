@@ -23,7 +23,7 @@ export CLASSPATH
 javac *.java # compile all .java files
 if [ $? -eq 0 ]; then
     echo "--Compilation completed."
-    echo "N   - number of surface points (along square side)"
+    echo "N   - number of surface points as a power of 2 (along square side)"
     echo "rL  - length of surface (along square side)"
     echo "h   - rms height"
     echo "clx (cly)  - correlation lengths (in x and y)"

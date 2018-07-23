@@ -40,10 +40,6 @@ public class Linspace {
                     res[i] = round(start + i*( (end-start)/total ),4);
                 }
             }
-            if( res.length<=2 ) {
-                res[0] = start;
-                res[total+1] = end;
-            }
             return res;
         // in case of overflow    
         } catch (ArithmeticException e) {

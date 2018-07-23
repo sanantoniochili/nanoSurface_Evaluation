@@ -7,6 +7,11 @@
 * then do a 1D FFT or IFFT (respectively) on each column of the previous results.
 *
 */
+
+import java.lang.Math;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class FFT_2D {
 
 	private int N;
@@ -90,6 +95,14 @@ public class FFT_2D {
 		return true;
 
 	}
+
+	private static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+     
+        BigDecimal bd = new BigDecimal(Double.toString(value));
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
 
 	public void printArray(Complex[][] X) {
 		for (int i=0 ; i<N ; i++) {
