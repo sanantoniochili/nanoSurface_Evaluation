@@ -27,12 +27,12 @@ public class RandomGaussSurfaceGenerator {
     public Double[][] Surf;    //height results
 
 	// non-isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx, double cly) throws ImError{ //, double rL, dounble h, double clx, double cly) {
-    	this.N   = N;
-    	this.rL  = rL;
-    	this.clx = clx;
-    	this.cly = cly;
-    	this.H   = h;
+    public RandomGaussSurfaceGenerator(double[] args, double cly) throws ImError{ 
+    	this.N   = (int)args[0];
+    	this.rL  = args[1];
+    	this.H   = args[2];
+        this.clx = args[3];
+        this.cly = cly;
 
     	meshGrid();		  // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
@@ -70,11 +70,11 @@ public class RandomGaussSurfaceGenerator {
     }
 
     // isotropic surface
-    public RandomGaussSurfaceGenerator(int N, double rL, double h, double clx) throws ImError{ //, double rL, dounble h, double clx, double cly) {
-    	this.N   = N;
-        this.rL  = rL;
-        this.clx = clx;
-        this.H   = h;
+    public RandomGaussSurfaceGenerator(double[] args) throws ImError{ 
+    	this.N   = (int)args[0];
+        this.rL  = args[1];
+        this.H   = args[2];
+        this.clx = args[3];
 
     	meshGrid();       // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
@@ -108,8 +108,6 @@ public class RandomGaussSurfaceGenerator {
                 Surf[i][j] = new Double( round(2*rL/N/clx*Res[i][j].re(),4) );
             }
         }
-        printArray(Surf);
-
 
     }
 

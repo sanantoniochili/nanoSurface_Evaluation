@@ -23,8 +23,14 @@ export CLASSPATH
 javac *.java # compile all .java files
 if [ $? -eq 0 ]; then
     echo "--Compilation completed."
+    echo "N   - number of surface points (along square side)"
+    echo "rL  - length of surface (along square side)"
+    echo "h   - rms height"
+    echo "clx (cly)  - correlation lengths (in x and y)"
+    echo "Reading arguments in the following order: N rL h clx (cly)"
+    read args 
     echo "--Executing Main.."
-    java Main
+    java Main $args
 else
     echo "--Compilation failed."
     exit
