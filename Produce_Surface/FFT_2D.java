@@ -8,10 +8,12 @@
 *
 */
 
+package operations;
+
 import java.lang.Math;
 import java.math.BigDecimal;
 
-public class FFT_2D {
+public class FFT_2D extends FFT {
 
 	private int N;
 	private int M;
@@ -35,17 +37,16 @@ public class FFT_2D {
 	public Complex[][] FTransform(Complex[][] X_cox) {
 		Complex[][] temp = new Complex[N][M]; // result of 1D FFT on each row of X
         Complex[][] res = new Complex[N][M];
-        FFT fft = new FFT();
 
         for (int i=0 ; i<N ; i++) { // for each row
-            temp[i] = fft.fft(X_cox[i]);
+            temp[i] = fft(X_cox[i]);
         }
         for (int j=0 ; j<M ; j++) { // for each column
             Complex[] seq = new Complex[N];
             for (int i=0 ; i<N ; i++) { // for each row
                 seq[i] = temp[i][j];
             }
-            Complex[] res_col = fft.fft(seq); // 1D array column of result
+            Complex[] res_col = fft(seq); // 1D array column of result
             for (int i=0 ; i<N ; i++) {
                 res[i][j] = res_col[i]; // save sequence to result column
             }
@@ -57,17 +58,16 @@ public class FFT_2D {
 	public Complex[][] iFTransform(Complex[][] X_cox) {
 		Complex[][] temp = new Complex[N][M]; // result of 1D iFFT on each row of X
         Complex[][] res = new Complex[N][M];
-        FFT fft = new FFT();
 
         for (int i=0 ; i<N ; i++) { // for each row
-            temp[i] = fft.ifft(X_cox[i]);
+            temp[i] = ifft(X_cox[i]);
         }
         for (int j=0 ; j<M ; j++) { // for each column
             Complex[] seq = new Complex[N];
             for (int i=0 ; i<N ; i++) { // for each row
                 seq[i] = temp[i][j];
             }
-            Complex[] res_col = fft.ifft(seq); // 1D array column of result
+            Complex[] res_col = ifft(seq); // 1D array column of result
             for (int i=0 ; i<N ; i++) {
                 res[i][j] = res_col[i]; // save sequence to result column
             }

@@ -1,8 +1,13 @@
+
+package generator;
+
 import java.util.*;
 import java.io.*;
 import java.lang.Math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+
+import operations.*;
 
 
 public class RandomGaussSurfaceGenerator {
@@ -33,7 +38,7 @@ public class RandomGaussSurfaceGenerator {
     	this.H   = args[2];
         this.clx = args[3];
         this.cly = cly;
-//System.out.println(this.cly);
+
     	meshGrid();		  // init members meshGridX, meshGridY
     	RandomSurfaceH(); // init member RandomRoughSurf
         double[][] GF = GaussianFilter(cly);

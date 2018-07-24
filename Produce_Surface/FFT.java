@@ -23,6 +23,8 @@
  *
  ******************************************************************************/
 
+package operations;
+
 public class FFT {
 
     // compute the FFT of x[], assuming its length is a power of 2
