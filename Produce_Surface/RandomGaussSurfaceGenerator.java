@@ -61,7 +61,7 @@ public class RandomGaussSurfaceGenerator {
 
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                if( round(Res[i][j].im(),4)!=0 ) // must be real number after rounding
+                if( round(Res[i][j].im(),10)!=0 ) // must be real number after rounding
                     throw new ImError();
                 Surf[i][j] = new Double( 2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re() );
             }
@@ -104,7 +104,7 @@ public class RandomGaussSurfaceGenerator {
 
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                if( round(Res[i][j].im(),4)!=0 ) // must be real number after rounding
+                if( round(Res[i][j].im(),10)!=0 ) // must be real number after rounding
                     throw new ImError();
                 Surf[i][j] = new Double( 2*rL/N/clx*Res[i][j].re() );
             }
@@ -150,7 +150,7 @@ public class RandomGaussSurfaceGenerator {
     	Random rand = new Random();
     	for (int i=0 ; i<N ; i++) {
     		for (int j=0 ; j<N ; j++) {
-    			RandomRoughSurf[i][j] = H*round(rand.nextGaussian(), 4); //standard normal distribution
+    			RandomRoughSurf[i][j] = H*rand.nextGaussian(); //standard normal distribution
     		}
     	}
 

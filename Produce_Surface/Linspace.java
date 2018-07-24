@@ -4,7 +4,6 @@
 */
 import java.lang.Math;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 
 public class Linspace {
@@ -33,11 +32,11 @@ public class Linspace {
             double[] res = new double[total+1];
             if( end*start<0 ){
                 for (int i=0 ; i<=total ; i++) {
-                    res[i] = round(start + (end/total)*i - (start/total)*i,4);
+                    res[i] = start + (end/total)*i - (start/total)*i;
                 }
             } else {
                 for (int i=0; i<=total ; i++) {
-                    res[i] = round(start + i*( (end-start)/total ),4);
+                    res[i] = start + i*( (end-start)/total );
                 }
             }
             return res;
@@ -45,18 +44,11 @@ public class Linspace {
         } catch (ArithmeticException e) {
             double[] res = new double[total+1];
             for (int i=0; i<=total ; i++) {
-                res[i] = round(start + i*( (end-start)/total ),4);
+                res[i] = start + i*( (end-start)/total );
             }
             return res;
         }
 
     }
 
-    private static double round(double value, int places) {
-        if (places < 0) throw new IllegalArgumentException();
-     
-        BigDecimal bd = new BigDecimal(Double.toString(value));
-        bd = bd.setScale(places, RoundingMode.HALF_UP);
-        return bd.doubleValue();
-    }
 }
