@@ -20,7 +20,7 @@ done
 CLASSPATH="$CLASSPATH:." # add current folder
 export CLASSPATH
 
-javac *.java # compile all .java files
+javac -d . operations/*.java generator/*.java # compile all .java files
 if [ $? -eq 0 ]; then
     echo "--Compilation completed."
     echo "N   - number of surface points as a power of 2 (along square side)"
@@ -30,7 +30,7 @@ if [ $? -eq 0 ]; then
     echo "Reading arguments in the following order: N rL h clx (cly)"
     read args 
     echo "--Executing Main.."
-    java Main $args
+    java generator.Main $args
 else
     echo "--Compilation failed."
     exit
