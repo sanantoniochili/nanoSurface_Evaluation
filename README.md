@@ -1,7 +1,7 @@
 # NanostructuredSurfaceEval_NGramGraphs
 Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
 
--Produce_Surface
+--Produce_Surface
 
 In order to generate a new Random Gaussian Surface, run the bash script named "RUNME.sh" and follow the instructions:
 
