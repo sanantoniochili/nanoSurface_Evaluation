@@ -1,4 +1,4 @@
-# NanostructuredSurfaceEval_NGramGraphs
+# nanoSurfaceEval
 Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
 
 --Produce_Surface
