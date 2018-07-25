@@ -23,11 +23,12 @@ export CLASSPATH
 javac -d . operations/*.java generator/*.java # compile all .java files
 if [ $? -eq 0 ]; then
     echo "--Compilation completed."
-    echo "N   - number of surface points as a power of 2 (along square side)"
-    echo "rL  - length of surface (along square side)"
-    echo "h   - rms height"
-    echo "clx (cly)  - correlation lengths (in x and y)"
-    echo "Reading arguments in the following order: N rL h clx (cly)"
+    echo "-N          <number of surface points as a power of 2 (along square side)>"
+    echo "-rL         <length of surface (along square side)>"
+    echo "-h          <rms height>"
+    echo "-clx (-cly) <correlation length in x (y)>"
+    echo "-out        <output filename>"
+    echo "[ENTER FLAGS]"
     read args 
     echo "--Executing Main.."
     java generator.Main $args

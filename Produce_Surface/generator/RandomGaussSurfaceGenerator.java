@@ -71,7 +71,6 @@ public class RandomGaussSurfaceGenerator {
                 Surf[i][j] = new Double( 2*rL/N/Math.sqrt(clx*cly)*Res[i][j].re() );
             }
         }
-        printArray(Surf);
 
     }
 
@@ -114,7 +113,6 @@ public class RandomGaussSurfaceGenerator {
                 Surf[i][j] = new Double( 2*rL/N/clx*Res[i][j].re() );
             }
         }
-        printArray(Surf);
 
     }
 
@@ -205,14 +203,15 @@ public class RandomGaussSurfaceGenerator {
         System.out.println(" ");
     }
 
-    public void printArray(Double[][] X) {
+    public void printArray(Double[][] X, PrintStream ps) {
+        System.setOut(ps);
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                System.out.print(X[i][j]+" ");
+                System.out.print(X[i][j]+"\t");
             }
-            System.out.println(" ");
+            System.out.println("");
         }
-        System.out.println(" ");
+        System.out.println("");
     }
 
     /*
