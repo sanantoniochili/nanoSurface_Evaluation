@@ -46,11 +46,15 @@ public class Main {
        		PrintStream ps = new PrintStream(System.out); // standard output
        		RG.printArray(RG.Surf,ps);
        	} else {
-       		File outFile = new File(filename);
-  		    FileOutputStream fout = new FileOutputStream(outFile);
-  		    PrintStream ps = new PrintStream(fout); // output file <filename>
-  		    RG.printArray(RG.Surf,ps);
-
+          try{
+         		File outFile = new File(filename);
+    		    FileOutputStream fout = new FileOutputStream(outFile);
+    		    PrintStream ps = new PrintStream(fout); // output file <filename>
+    		    RG.printArray(RG.Surf,ps);
+          } catch (IOException ex){
+            System.out.println("There was a problem creating/writing to the file");
+            ex.printStackTrace();
+          }
        	}
     }
 
