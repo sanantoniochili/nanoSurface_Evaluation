@@ -3,19 +3,21 @@ Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
 
 --Produce_Surface
 
-In order to generate a new Random Gaussian Surface, run the bash script named "RUNME.sh" and follow the instructions:
+In order to generate a new Random Gaussian Surface, run the bash script named "RUNME.sh" and use the following flags:
 
-N   - number of surface points (along square side) 
+-N           <number of surface points (along square side)>
 
-rL  - length of surface (along square side)
+-rL          <length of surface (along square side)>
 
-h   - rms height
+-h           <rms height>
 
-clx (cly)  - correlation lengths (in x and y)
+-clx (-cly)  <correlation length in x (and y)>
+
+-out         <output filename>
 
 [INPUT]
-Provide the parameters needed in the following order: N rL h clx (cly). 
-Provision of cly will determine whether the surface will be isotropic or non-isotropic.
+Provide the parameters needed (N, rL, h, clx are compulsory).
+Omitting cly makes the surface isotropic.
 Number N must be power of 2.
 
 [OUTPUT]
