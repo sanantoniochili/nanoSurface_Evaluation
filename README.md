@@ -9,11 +9,11 @@ Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
 
 Use the following flags:
 
-* -N <number of surface points (along square side)>
-* -rL <length of surface (along square side)>
-* -h <rms height>
-* -clx (-cly)  <correlation length in x (and y)>
-* -out <output filename>
+* -N \<number of surface points (along square side)>
+* -rL \<length of surface (along square side)>
+* -h \<rms height>
+* -clx (-cly)  \<correlation length in x (and y)>
+* -out \<output filename>
 
 [INPUT]
 
