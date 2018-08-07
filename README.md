@@ -3,10 +3,6 @@ Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
 
 ## Produce_Surface
 
-```
-./RUNME.sh
-```
-
 Use the following flags:
 
 * -N \<number of surface points (along square side)>
