@@ -1,7 +1,7 @@
 /*
-* Generates n points
-* The spacing between the points is (arg2-arg1)/(n-1).
-*/
+ * Generates n points
+ * The spacing between the points is (arg2-arg1)/(n-1).
+ */
 
 package operations;
 
@@ -43,7 +43,7 @@ public class Linspace {
                 }
             }
             return res;
-        // in case of overflow    
+            // in case of overflow
         } catch (ArithmeticException e) {
             double[] res = new double[total+1];
             for (int i=0; i<=total ; i++) {

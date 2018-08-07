@@ -128,7 +128,7 @@ public class Complex {
     public Complex tan() {
         return sin().divides(cos());
     }
-    
+
 
 
     // a static version of plus
