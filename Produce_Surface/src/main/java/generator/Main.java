@@ -18,25 +18,29 @@ import org.jzy3d.plot3d.primitives.Shape;
 import org.jzy3d.plot3d.rendering.canvas.Quality;
 import org.jzy3d.plot3d.rendering.canvas.CanvasAWT;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] argv) throws Exception{
-        if( argv.length<4 ){
-            System.out.println("Error in argument passing.");
-            return;
-        }
-        String filename= new String();
-        double[] args_ = new double[argv.length];
-        int y_flag 	   = 0;
-        int out_flag   = 0;
+
+        String out_filename= "";
+        String in_filename = "";
+        String cvsSplitBy  = ",";
+        double[] args_     = new double[5];
+        int y_flag 	       = 0;
+        int out_flag       = 0;
+        int in_flag        = 0;
+
         for (int i=0 ; i<argv.length ; i++) {
+            if( argv[i].equals("-in") ) {
+                in_filename = argv[++i];
+                in_flag = 1;
+            }
             if( argv[i].equals("-N") )
                 args_[0] = Double.parseDouble(argv[++i]);
             if( argv[i].equals("-rL") )
@@ -50,11 +54,64 @@ public class Main {
                 y_flag = 1;
             }
             if( argv[i].equals("-out") ){
-                filename = new String(argv[++i]);
+                out_filename = argv[++i];
                 out_flag = 1;
             }
         }
+        // read from standard input
+        if( in_flag==0 ) {
+            RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
 
+            System.setOut(System.out);
+            plot_surface(RG);
+
+
+        // read from csv file with multiple surface parameters
+        } else {
+            BufferedReader reader = null;
+            String line       = "";
+            y_flag            = 0;
+            try {
+
+                reader = new BufferedReader(new FileReader(in_filename));
+                line = reader.readLine(); // get first line with names of parameters
+                String[] all_params = line.split(cvsSplitBy);
+                for (int i=0; i<all_params.length ; i++) {
+                    if( all_params[i].equals("cly") )
+                        y_flag = 1;
+                }
+                //while ((line = reader.readLine()) != null) {
+                line = reader.readLine();
+                    // use comma as separator
+                    all_params = line.split(cvsSplitBy);
+
+                    //System.out.println(all_params[2]);
+                    args_[1] = Math.sqrt(Double.parseDouble(all_params[6]));
+                    args_[2] = Double.parseDouble(all_params[1]);
+                    args_[3] = Double.parseDouble(all_params[2]);
+                    if( y_flag==1 ) args_[4] = Double.parseDouble(all_params[3]);
+
+                RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
+               //}
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    static private RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError {
         RandomGaussSurfaceGenerator RG;
         if( y_flag==0 )
             RG = new RandomGaussSurfaceGenerator(args_); // isotropic
@@ -67,9 +124,9 @@ public class Main {
             RG.printArray(RG.Surf,ps);
         } else {
             try{
-                File outFile = new File(filename);
+                File outFile = new File(out_filename);
                 FileOutputStream fout = new FileOutputStream(outFile);
-                PrintStream ps = new PrintStream(fout); // output file <filename>
+                PrintStream ps = new PrintStream(fout); // output file <out_filename>
                 RG.printArray(RG.Surf,ps);
                 fout.close();
             } catch (IOException ex){
@@ -77,11 +134,13 @@ public class Main {
                 ex.printStackTrace();
             }
         }
+        return RG;
+    }
 
-
-        // Build a polygon list
+    static private void plot_surface(RandomGaussSurfaceGenerator RG) throws IOException {
         double[][] distDataProp = RG.Surf;
 
+        // Build a polygon list
         List<Polygon> polygons = new ArrayList<Polygon>();
         for(int i = 0; i < distDataProp.length -1; i++){
             for(int j = 0; j < distDataProp[i].length -1; j++){
@@ -102,6 +161,8 @@ public class Main {
         Chart chart = new AWTChartComponentFactory().newChart(Quality.Advanced, "awt");;
         chart.getScene().getGraph().add(surface);
         ChartLauncher.openChart(chart);
+        File image = new File("surface.png");
+        chart.screenshot(image);
     }
-
 }
+
