@@ -4,6 +4,7 @@ package generator;
 import java.util.*;
 import java.io.*;
 import java.lang.Math;
+import java.io.Writer;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -194,11 +195,35 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    void printArray(double[][] X, PrintStream ps) {
-        System.setOut(ps);
+    void printArray(FileWriter writer, double[][] X) throws IOException { // one surface per line, height per column
+        StringBuilder sb = new StringBuilder();
+        sb.append("rms:").append(String.valueOf((this.H))); // printing parameters in first column as: <param_name>:<param_value>
+        sb.append(":clx:").append(String.valueOf(this.clx));
+        sb.append(":cly:").append(String.valueOf(this.cly));
+        sb.append(',');
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                System.out.print(X[i][j]+"\t");
+                if( i==0 && j==0 ) {
+                    sb.append(String.valueOf(X[0][0]));
+                } else {
+                    sb.append(',').append(String.valueOf(X[i][j]));
+                }
+            }
+        }
+        sb.append("\n");
+        writer.append(sb.toString());
+        writer.close();
+    }
+
+    void printArray(double[][] X) throws IOException { // one line of surface per line of output
+        System.out.println("rms:"+this.H+" clx:"+this.clx+" cly:"+this.cly);
+        for (int i=0 ; i<N ; i++) {
+            for (int j=0 ; j<N ; j++) {
+                if( j==0 ) {
+                    System.out.print(X[i][0]);
+                } else {
+                    System.out.print(","+X[i][j]);
+                }
             }
             System.out.println();
         }
