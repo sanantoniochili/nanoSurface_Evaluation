@@ -61,10 +61,10 @@ public class Main {
         // read from standard input
         if( in_flag==0 ) {
             RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
-
-            System.setOut(System.out);
             plot_surface(RG);
 
+            CSVReader reader = new CSVReader();
+            reader.test("stdin_results.csv");
 
         // read from csv file with multiple surface parameters
         } else {
@@ -80,19 +80,17 @@ public class Main {
                     if( all_params[i].equals("cly") )
                         y_flag = 1;
                 }
-                //while ((line = reader.readLine()) != null) {
-                line = reader.readLine();
+                while ((line = reader.readLine()) != null) {
                     // use comma as separator
                     all_params = line.split(cvsSplitBy);
 
-                    //System.out.println(all_params[2]);
                     args_[1] = Math.sqrt(Double.parseDouble(all_params[6]));
                     args_[2] = Double.parseDouble(all_params[1]);
                     args_[3] = Double.parseDouble(all_params[2]);
                     if( y_flag==1 ) args_[4] = Double.parseDouble(all_params[3]);
 
-                RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
-               //}
+                    RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
+                }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -111,24 +109,19 @@ public class Main {
 
     }
 
-    static private RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError {
+    static private RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError, IOException {
         RandomGaussSurfaceGenerator RG;
         if( y_flag==0 )
             RG = new RandomGaussSurfaceGenerator(args_); // isotropic
         else
             RG = new RandomGaussSurfaceGenerator(args_,args_[4]); // non-isotropic,last argument is cly
 
-
-        if( out_flag==0 ){
-            PrintStream ps = new PrintStream(System.out); // standard output
-            RG.printArray(RG.Surf,ps);
+        if( out_flag==0 ){ // standard output
+            RG.printArray(RG.Surf);
         } else {
             try{
-                File outFile = new File(out_filename);
-                FileOutputStream fout = new FileOutputStream(outFile);
-                PrintStream ps = new PrintStream(fout); // output file <out_filename>
-                RG.printArray(RG.Surf,ps);
-                fout.close();
+                FileWriter writer = new FileWriter(out_filename,true);
+                RG.printArray(writer,RG.Surf);
             } catch (IOException ex){
                 System.out.println("There was a problem creating/writing to the file");
                 ex.printStackTrace();
