@@ -8,7 +8,8 @@ import java.util.Vector;
 
 public class Surface {
 
-    int TotalElementNo;
+    int TotalElementNo; // total number of surface points
+    int N; // number of surface points (along square side)
 
     double rms;
     double clx;
@@ -16,11 +17,12 @@ public class Surface {
 
     Vector<Pair<Integer,Double>> points; // save points as pairs of <index,height>
 
-    public Surface(double rms, double clx, double cly, int total) {
+    public Surface(double rms, double clx, double cly, int total, int side) {
         this.rms = rms;
         this.clx = clx;
         this.cly = cly;
         this.TotalElementNo = total;
+        this.N = side;
 
         points = new Vector<>(total);
     }
@@ -30,6 +32,7 @@ public class Surface {
         this.clx = S.clx;
         this.cly = S.cly;
         this.TotalElementNo = S.TotalElementNo;
+        this.N = S.N;
 
         points = new Vector<>(S.points);
     }

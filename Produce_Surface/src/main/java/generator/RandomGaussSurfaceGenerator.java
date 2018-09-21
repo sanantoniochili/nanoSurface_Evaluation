@@ -200,6 +200,7 @@ public class RandomGaussSurfaceGenerator {
         sb.append("rms:").append(String.valueOf((this.H))); // printing parameters in first column as: <param_name>:<param_value>
         sb.append(":clx:").append(String.valueOf(this.clx));
         sb.append(":cly:").append(String.valueOf(this.cly));
+        sb.append(":N:").append(String.valueOf(this.N));
         sb.append(',');
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
@@ -216,7 +217,7 @@ public class RandomGaussSurfaceGenerator {
     }
 
     void printArray(double[][] X) throws IOException { // one line of surface per line of output
-        System.out.println("rms:"+this.H+" clx:"+this.clx+" cly:"+this.cly);
+        System.out.println("rms:"+this.H+" clx:"+this.clx+" cly:"+this.cly+" N:"+this.N);
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
                 if( j==0 ) {

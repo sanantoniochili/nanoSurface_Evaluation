@@ -1,3 +1,10 @@
+/* Project is not finished.
+* Till now: Actions to split [minH,maxH] to zones with same amount of points. Creating array of boundaries.
+* Beginning from both ends and meeting in the middle.
+* Probably: Find concentration to each zone's mean height and rearrange boundaries.
+* Must: Encode points to letters based on input number of spaces.
+ */
+
 package encode;
 
 import input_load.CSVRead;
@@ -13,7 +20,7 @@ public class Main {
             }
         }
         CSVRead reader = new CSVRead(csvFile);
-        Encode encoder = new Encode(SpacesNo, reader.STable.get(0));
+        Encoder encoder = new Encoder(SpacesNo, reader.STable.get(0));
 
 
     }

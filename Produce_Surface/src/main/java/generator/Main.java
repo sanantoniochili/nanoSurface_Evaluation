@@ -56,6 +56,15 @@ public class Main {
             if( argv[i].equals("-out") ){
                 out_filename = argv[++i];
                 out_flag = 1;
+
+                // check if file exists
+                File f = new File(out_filename);
+                // erase content if exists
+                if(f.exists() && !f.isDirectory()) {
+                    FileWriter writer = new FileWriter(out_filename);
+                    writer.write("");
+                    writer.close();
+                }
             }
         }
         // read from standard input
