@@ -3,39 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1501fb4-43f4-44f9-ae75-59fd53c4b953" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/generator/CSVReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/generator/ImError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/generator/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/operations/Complex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/operations/FFT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/operations/FFT_2D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/operations/Linspace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/java/operations/StdOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/Produce_Surface-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/generator/ImError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/generator/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/generator/RandomGaussSurfaceGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/operations/Complex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/operations/FFT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/operations/FFT_2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/operations/Linspace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/classes/operations/StdOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Produce_Surface/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -193,7 +160,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="dependencies&#9;PSI&#9;JAVA://com.sun.javafx.binding.SelectBinding.SelectBindingHelper#dependencies" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537891149384" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537891669148" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProduceSurface" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
