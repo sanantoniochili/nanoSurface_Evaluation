@@ -2,8 +2,8 @@ package encode;
 
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import javafx.util.Pair;
-import operations.BinaryTree;
-import operations.Linspace;
+import utils.BinaryTree;
+import utils.Linspace;
 
 import java.io.FileWriter;
 import java.io.IOException;

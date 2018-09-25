@@ -1,6 +1,6 @@
 // Java program to print BST in given range
 
-package operations;
+package utils;
 
 import javafx.util.Pair;
 import java.util.Vector;
