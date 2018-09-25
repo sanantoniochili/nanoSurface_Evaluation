@@ -4,11 +4,10 @@ package generator;
 import java.util.*;
 import java.io.*;
 import java.lang.Math;
-import java.io.Writer;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import operations.*;
+import utils.*;
 
 
 public class RandomGaussSurfaceGenerator {

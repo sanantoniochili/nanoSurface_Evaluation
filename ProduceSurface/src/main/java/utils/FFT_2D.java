@@ -8,10 +8,7 @@
  *
  */
 
-package operations;
-
-import java.lang.Math;
-import java.math.BigDecimal;
+package utils;
 
 public class FFT_2D extends FFT {
 

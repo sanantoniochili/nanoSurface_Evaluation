@@ -3,7 +3,7 @@
  * The spacing between the points is (arg2-arg1)/(n-1).
  */
 
-package operations;
+package utils;
 
 import java.lang.Math;
 import java.math.BigDecimal;

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1501fb4-43f4-44f9-ae75-59fd53c4b953" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../EncodeSimple/src/main/java/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/src/main/java/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncodeSimple/src/main/java/operations/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncodeSimple/src/main/java/operations/Linspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/operations/Complex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/operations/FFT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/operations/FFT_2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/operations/Linspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/operations/StdOut.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />

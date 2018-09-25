@@ -23,7 +23,7 @@
  *
  ******************************************************************************/
 
-package operations;
+package utils;
 
 public class FFT {
 
