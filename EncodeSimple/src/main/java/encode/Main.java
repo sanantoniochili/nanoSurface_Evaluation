@@ -5,18 +5,20 @@
 
 package encode;
 
+import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import input_load.CSVRead;
-import javafx.util.Pair;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.Inet4Address;
-import java.util.Iterator;
+import java.util.Vector;
 
 public class Main {
     static int SpacesNo = 1;
     static int Scale = 0;
+
+    static Vector<DocumentNGramGraph> NGGs;
+
     public static void main(String[] argv) throws IOException {
         
         String csvFile = "";
@@ -27,7 +29,7 @@ public class Main {
             if (argv[i].equals("-in")) {
                 csvFile = argv[++i];
             }
-            if (argv[i].equals("-z")) {
+            if (argv[i].equals("-z")) { // number of spaces to divide [-100nm,100nm] into
                 SpacesNo = Integer.parseInt(argv[++i]);
                 if( SpacesNo>26 && (SpacesNo%2 != 0) ){
                     System.out.println("Please provide different number of spaces");
@@ -54,13 +56,34 @@ public class Main {
                 }
             }
         }
-        CSVRead reader = new CSVRead(csvFile,Scale);
-        Encoder encoder = new Encoder(SpacesNo, reader.STable.get(0));
-        encoder.InText();
 
+        NGGs = new Vector<>();
+
+        CSVRead reader = new CSVRead(csvFile,Scale);
+        Encoder encoder = new Encoder(SpacesNo, reader.SurfTable.get(0));
+        for (int i=1; i<reader.SurfTable.size(); i++) { // for all surfaces in file
+
+            // encode in text and print surface
+            encoder.InText();
+            if( out_flag==0 ){ // standard output
+                encoder.printText();
+            } else { // file
+                try{
+                    FileWriter writer = new FileWriter(out_filename,true);
+                    encoder.printText(writer);
+                } catch (IOException ex){
+                    System.out.println("There was a problem creating/writing to the file");
+                    ex.printStackTrace();
+                }
+            }
+
+            encoder.changeSurface(reader.SurfTable.get(i)); // next surface to encode
+        }
+        // print last surface
+        encoder.InText();
         if( out_flag==0 ){ // standard output
             encoder.printText();
-        } else {
+        } else { // file
             try{
                 FileWriter writer = new FileWriter(out_filename,true);
                 encoder.printText(writer);
@@ -69,5 +92,8 @@ public class Main {
                 ex.printStackTrace();
             }
         }
+
+        System.out.println();
+
     }
 }

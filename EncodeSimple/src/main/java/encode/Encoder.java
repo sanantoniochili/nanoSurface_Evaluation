@@ -1,5 +1,6 @@
 package encode;
 
+import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import javafx.util.Pair;
 import operations.BinaryTree;
 import operations.Linspace;
@@ -11,7 +12,7 @@ import java.util.Vector;
 
 public class Encoder {
 
-    // initial surface
+    // surface
     Surface S;
     // each pair contains the point's index (number/position) and the matched character
     Vector<Pair<Integer,Character>> Text;
@@ -54,6 +55,10 @@ public class Encoder {
         Text = new Vector<>(S.TotalElementNo); // we have to build this
     }
 
+    void changeSurface(Surface S) {
+        this.S = S;
+    }
+
     void InText() {
 
         // building a tree out of pairs <Character,BoundOfSpace>
@@ -82,6 +87,7 @@ public class Encoder {
                 System.out.println();
             }
         }
+        System.out.println();
     }
 
     void printText(FileWriter writer) throws IOException {
@@ -95,12 +101,22 @@ public class Encoder {
                 sb.append('\n');
             }
         }
-
+        sb.append("\n");
         writer.append(sb.toString());
         writer.close();
     }
 
+    DocumentNGramGraph toGraph(String sFilename) {
+        DocumentNGramGraph dngGraph = new DocumentNGramGraph();
+        // Load the data string from the file, also dealing with exceptions
+        try {
+            dngGraph.loadDataStringFromFile(sFilename);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
 
+        return dngGraph;
+    }
 
 
 }

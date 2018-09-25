@@ -12,18 +12,17 @@ import java.util.Vector;
 
 public class CSVRead {
 
-    public Vector<Surface> STable;
+    public Vector<Surface> SurfTable;
 
     public CSVRead(String csvFile, int Scale) {
         String line = "";
         String csvSplit1 = ",";
         String csvSplit2 = ":";
 
-        STable = new Vector<>();
+        SurfTable = new Vector<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(csvFile));
-            line = br.readLine();
-            //while ((line = br.readLine()) != null) { // each line is a sequence of heights from a surface
+            while ((line = br.readLine()) != null) { // each line is a sequence of heights from a surface
 
                 // first column is parameters with colon separator
                 // rest columns are heights with comma separator
@@ -45,10 +44,10 @@ public class CSVRead {
                     data.add_height(i,new Double(heights[i])*Math.pow(10,Scale));
                 }
 
-                STable.addElement(data); // add to vector of surfaces
+                SurfTable.addElement(data); // add to vector of surfaces
 
 
-           // }
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
