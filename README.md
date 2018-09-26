@@ -15,7 +15,7 @@ Use the following flags:
 [INPUT]
 
 input file(.cvs) format: \",Rms,clx,cly,Skewness,Kurtosis,Area" as a header 
-                   \<ID>,<Rms>,<clx>,<cly>,<Skewness>,<Kurtosis>,<Area> per line
+                         \<ID>,<Rms>,<clx>,<cly>,<Skewness>,<Kurtosis>,<Area> per line
 
 Provide the parameters needed (N, rL, h, clx are compulsory).
 Omitting cly makes the surface isotropic.
