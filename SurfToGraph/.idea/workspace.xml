@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1501fb4-43f4-44f9-ae75-59fd53c4b953" name="Default Changelist" comment="remove .idea">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/nanoSurfaceEval.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="d1501fb4-43f4-44f9-ae75-59fd53c4b953" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -60,15 +55,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3077" />
-          <entry key="txt" value="44" />
+          <entry key="java" value="3078" />
+          <entry key="txt" value="71" />
           <entry key="xml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3077" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="JAVA" value="3078" />
+          <entry key="PLAIN_TEXT" value="71" />
           <entry key="XML" value="31" />
         </counts>
       </usages-collector>
@@ -91,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="217">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/input_load/TextReader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java" />
       </list>
     </option>
   </component>
@@ -192,7 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="dependencies&#9;PSI&#9;JAVA://com.sun.javafx.binding.SelectBinding.SelectBindingHelper#dependencies" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537968503678" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537969024848" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -304,7 +299,28 @@
       <option name="project" value="LOCAL" />
       <updated>1537967858885</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove .idea">
+      <created>1537968368866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537968368866</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove .idea">
+      <created>1537968490048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537968490048</updated>
+    </task>
+    <task id="LOCAL-00008" summary="trying to remove .idea">
+      <created>1537968632538</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537968632538</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -324,9 +340,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49878544" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49878544" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49959514" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49878544" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3291815" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -372,7 +388,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OpenJGraph to JGraphT" />
     <MESSAGE value="remove .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .idea" />
+    <MESSAGE value="trying to remove .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to remove .idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,8 +527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="217">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
