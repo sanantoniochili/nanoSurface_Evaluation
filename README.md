@@ -53,7 +53,7 @@ A text denoting a height-zone [x,y], -100nm<=x<y<=100nm for every letter.
 
 [INPUT]
 
-input file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
+input file(.txt) format: ((\<letter>)\*\<blankline>(\<letter>)\*)*
 
 A ".txt" file containing texts that correspond to encoded surfaces. Texts are separated by a blank line (one text per surface).
 
