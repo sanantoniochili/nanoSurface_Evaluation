@@ -70,7 +70,7 @@ public class Main {
             } else { // file
                 try{
                     FileWriter writer = new FileWriter(out_filename,true);
-                    encoder.printText(writer);
+                    encoder.printText(writer,1);
                 } catch (IOException ex){
                     System.out.println("There was a problem creating/writing to the file");
                     ex.printStackTrace();

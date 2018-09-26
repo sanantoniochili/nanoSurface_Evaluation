@@ -10,10 +10,19 @@ import java.io.StringReader;
 
 public class Main {
     public static void main(String[] argv) throws IOException, ImportException {
-        TextReader reader = new TextReader("../EncodeSimple/small_results_SurfText1.txt");
+
+        String in_filename = "";
+        for (int i=0 ; i<argv.length ; i++) {
+            if (argv[i].equals("-in")) {
+                in_filename = argv[++i];
+            } else {
+                System.out.println("Please provide \".txt\" file.");
+            }
+        }
+        TextReader reader = new TextReader(in_filename);
         String surf = "";
-        //do{ // turn all surface-text to string
-            surf = reader.SurfToString();
+        do{ // turn all surface-text to string
+            surf = reader.SurfToString(1);
 
             // The default document n-gram graph
             // with min n-gram size and max n-gram size set to 3, and the dist parameter set to 3.
@@ -30,6 +39,6 @@ public class Main {
             jgraph.convertString(graph);
 
 
-        //}while( surf!=null ); // for all surface-texts
+        }while( surf!=null ); // for all surface-texts
     }
 }
