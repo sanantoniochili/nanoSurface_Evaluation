@@ -41,7 +41,7 @@ Use the following flags:
 
 input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
 
-A ".csv" file containing surface characteristics. First column contains parameters in a form <parameter>:<value> and every other column contains the height of the surface's points (column per height).
+A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
 
 [OUTPUT]
 
