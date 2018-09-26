@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3b826e90-d396-4c54-a12e-c20efabc3bbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -145,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-6" />
     <option name="y" value="-3" />
     <option name="width" value="1941" />
@@ -163,11 +167,6 @@
             <path>
               <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
               <item name="EncodeSimple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EncodeSimple" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
@@ -197,7 +196,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537969339663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537970079624" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProduceSurface" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -315,13 +314,27 @@
       <option name="project" value="LOCAL" />
       <updated>1537969099402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="trying to remove .idea">
+      <created>1537969309514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537969309514</updated>
+    </task>
+    <task id="LOCAL-00005" summary="trying to remove .idea">
+      <created>1537969389908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537969389908</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27449393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27449393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -337,7 +350,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3291815" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
