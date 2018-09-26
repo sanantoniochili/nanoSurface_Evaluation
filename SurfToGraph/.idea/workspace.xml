@@ -187,7 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="dependencies&#9;PSI&#9;JAVA://com.sun.javafx.binding.SelectBinding.SelectBindingHelper#dependencies" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537969069792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537969239236" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -340,9 +340,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49878544" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49878544" visible="true" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4979757" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020243" side_tool="true" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49878544" weight="0.3291815" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3291815" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
