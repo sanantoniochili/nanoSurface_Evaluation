@@ -37,3 +37,13 @@ A csv file containing surface characteristics. First column contains parameters 
 [OUTPUT]
 
 A text denoting a height-zone [x,y], -100nm<=x<y<=100nm for every letter.
+
+## SurfToGraph
+
+[INPUT]
+
+A ".txt" file containing texts that correspond to encoded surfaces. Texts are separated by a blank line (one text per surface).
+
+[OUTPUT]
+
+N gram graphs produced by the texts provided.
