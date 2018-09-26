@@ -28,7 +28,6 @@ public class Main {
 
             JGraphTWrapper jgraph = new JGraphTWrapper();
             jgraph.convertString(graph);
-            jgraph.ops();
 
 
         //}while( surf!=null ); // for all surface-texts
