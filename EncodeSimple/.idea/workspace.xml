@@ -7,18 +7,8 @@
       <change beforePath="$PROJECT_DIR$/../.idea/nanoSurfaceEval.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -160,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-6" />
     <option name="y" value="-3" />
     <option name="width" value="1941" />
@@ -178,6 +168,11 @@
             <path>
               <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
               <item name="EncodeSimple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EncodeSimple" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EncodeSimple" type="b2602c69:ProjectViewProjectNode" />
@@ -207,7 +202,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537892823860" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537968274247" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProduceSurface" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -315,9 +310,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-1" width="1294" height="688" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27471638" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27449393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
