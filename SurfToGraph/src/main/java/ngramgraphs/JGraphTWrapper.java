@@ -32,6 +32,5 @@ public class JGraphTWrapper {
         this.G = jgraph;
 
         return jgraph;
-
     }
 }
