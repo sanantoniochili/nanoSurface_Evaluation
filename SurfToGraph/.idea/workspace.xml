@@ -66,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,7 +169,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,12 +248,12 @@
       <option name="project" value="LOCAL" />
       <updated>1537970157475</updated>
     </task>
-    <task id="LOCAL-00002" summary="OpenJGraph to JGraphT">
-      <created>1537965525299</created>
+    <task id="LOCAL-00002" summary="trying to remove .idea">
+      <created>1537970666914</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1537965525299</updated>
+      <updated>1537970666914</updated>
     </task>
     <task id="LOCAL-00003" summary="OpenJGraph to JGraphT">
       <created>1537967607114</created>
@@ -297,7 +297,7 @@
       <option name="project" value="LOCAL" />
       <updated>1537968632538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -399,7 +399,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
