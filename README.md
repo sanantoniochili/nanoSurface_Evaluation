@@ -26,7 +26,7 @@ Number N must be power of 2.
 output file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
 
 The results are a matrix of heights corresponding to the surface points.
-Use standard input to use 3D surface plotter.
+Use standard input to invoke 3D surface plotter.
 
 ## EncodeSimple
 
