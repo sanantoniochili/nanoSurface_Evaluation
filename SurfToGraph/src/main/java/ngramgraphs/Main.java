@@ -3,6 +3,7 @@ package ngramgraphs;
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import gr.demokritos.iit.jinsect.utils;
 import input_load.TextReader;
+import org.jgrapht.Graph;
 import org.jgrapht.io.ImportException;
 
 import java.io.IOException;
@@ -21,7 +22,7 @@ public class Main {
         }
         TextReader reader = new TextReader(in_filename);
         String surf = "";
-        do{ // turn all surface-text to string
+        //do{ // turn all surface-text to string
             surf = reader.SurfToString(1);
 
             // The default document n-gram graph
@@ -36,9 +37,11 @@ public class Main {
             String graph =  utils.graphToDot(dngGraph.getGraphLevel(0), true);
 
             JGraphTWrapper jgraph = new JGraphTWrapper();
+
             jgraph.convertString(graph);
+            jgraph.vectorExtract();
 
 
-        }while( surf!=null ); // for all surface-texts
+        //}while( surf!=null ); // for all surface-texts
     }
 }

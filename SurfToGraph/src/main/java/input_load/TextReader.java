@@ -50,12 +50,10 @@ public class TextReader {
 
         while ( ((char)(ich = raf.read()) == '\n') && (ich!=-1) ); // find start of text
         if( ich==-1 ) return null; // reached end of input
-
         String buffer = "";
         do{
             buffer += (char)ich; // read parameters
         }while ( ((char)(ich = raf.read()) != '\n') && (ich!=-1) );
-
         ich = (char)raf.read();
         str += (char)ich; // add character to string
         temp = ich;

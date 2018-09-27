@@ -4,8 +4,10 @@
     <list default="true" id="3b826e90-d396-4c54-a12e-c20efabc3bbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/encode/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/input_load/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/input_load/TextReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/ngramgraphs/JGraphTWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/ngramgraphs/JGraphTWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/ngramgraphs/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,25 +80,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="939" />
-          <entry key="txt" value="40" />
+          <entry key="java" value="982" />
+          <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="939" />
-          <entry key="PLAIN_TEXT" value="40" />
+          <entry key="JAVA" value="982" />
+          <entry key="PLAIN_TEXT" value="100" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/encode/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="79" column="85" selection-start-line="79" selection-start-column="85" selection-end-line="79" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,20 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/encode/Encoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/util/Pair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state relative-caret-position="28">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -174,6 +167,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>add</find>
+      <find>change</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/main/java/operations/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/encode/Surface.java" />
         <option value="$PROJECT_DIR$/src/main/java/input_load/CSVRead.java" />
-        <option value="$PROJECT_DIR$/src/main/java/encode/Encoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/encode/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/encode/Encoder.java" />
       </list>
     </option>
   </component>
@@ -252,7 +246,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537979578526" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProduceSurface" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/JInsect-master/JInsect-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -383,7 +377,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537969389908</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Clearing Text member of Encoder for new surface">
+      <created>1538041381763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538041381763</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Clearing Text member of Encoder for new surface">
+      <created>1538041778927</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538041778927</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -453,25 +461,8 @@
     <MESSAGE value="Heights encoded into text output either to standard output or file." />
     <MESSAGE value="Rename folder" />
     <MESSAGE value="trying to remove .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to remove .idea" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/encode/Encoder.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/encode/Encoder.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Clearing Text member of Encoder for new surface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clearing Text member of Encoder for new surface" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/encode/Encode.java" />
@@ -575,20 +566,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/encode/Encoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/encode/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="79" column="85" selection-start-line="79" selection-start-column="85" selection-end-line="79" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/encode/Encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
