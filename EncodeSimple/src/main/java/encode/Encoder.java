@@ -56,7 +56,9 @@ public class Encoder {
     }
 
     void changeSurface(Surface S) {
+
         this.S = S;
+        this.Text.clear();
     }
 
     void InText() {

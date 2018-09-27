@@ -78,7 +78,6 @@ public class Main {
             }
 
             encoder.changeSurface(reader.SurfTable.get(i)); // next surface to encode
-            encoder.Text.clear();
         }
         // print last surface
         encoder.InText();
