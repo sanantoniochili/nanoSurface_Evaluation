@@ -70,7 +70,7 @@ public class Main {
             } else { // file
                 try{
                     FileWriter writer = new FileWriter(out_filename,true);
-                    encoder.printText(writer,1);
+                    encoder.printText(writer);
                 } catch (IOException ex){
                     System.out.println("There was a problem creating/writing to the file");
                     ex.printStackTrace();
@@ -78,6 +78,7 @@ public class Main {
             }
 
             encoder.changeSurface(reader.SurfTable.get(i)); // next surface to encode
+            encoder.Text.clear();
         }
         // print last surface
         encoder.InText();
