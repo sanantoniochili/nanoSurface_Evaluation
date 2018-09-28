@@ -1,7 +1,10 @@
 package ngramgraphs;
 
 import org.jgrapht.Graph;
+import org.jgrapht.alg.clique.BronKerboschCliqueFinder;
+import org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder;
 import org.jgrapht.alg.clique.PivotBronKerboschCliqueFinder;
+import org.jgrapht.alg.connectivity.BiconnectivityInspector;
 import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.alg.interfaces.ShortestPathAlgorithm;
 import org.jgrapht.alg.shortestpath.BidirectionalDijkstraShortestPath;
@@ -9,6 +12,7 @@ import org.jgrapht.alg.shortestpath.FloydWarshallShortestPaths;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.DirectedMultigraph;
 import org.jgrapht.graph.DirectedPseudograph;
+import org.jgrapht.graph.SimpleGraph;
 import org.jgrapht.io.*;
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 
@@ -43,6 +47,9 @@ public class JGraphTWrapper {
         avgPath();
         G.vertexSet().size();
         G.edgeSet().size();
+        avgDegree();
+        cliques();
+        connectedComponents();
 
 
 
@@ -82,15 +89,42 @@ public class JGraphTWrapper {
     }
 
     int cliques() {
-        PivotBronKerboschCliqueFinder cf = new PivotBronKerboschCliqueFinder(G);
+        // construct new graph similar to G
+        // new graph is simple
+        SimpleGraph NG= new SimpleGraph(DefaultEdge.class);
+
+        for (Object v: G.vertexSet()) { // for each vertex
+            NG.addVertex(v);
+        }
+        for (Object e: G.edgeSet()) { // for each vertex
+            String source = (String) G.getEdgeSource(e);
+            String target = (String) G.getEdgeTarget(e);
+            if( !(source.equals(target))  ) { // skip self loops
+                if( !NG.containsEdge(source,target) ) { // skip parallel edges
+                    NG.addEdge(source,target);
+                }
+            }
+        }
+
+        // find cliques on new simple graph
+        BronKerboschCliqueFinder cf = new BronKerboschCliqueFinder(NG);
 
         int i = 0;
         Iterator<Set> it = cf.iterator();
         while(  it.hasNext() ) {
-            Set clique = it.next();
+            it.next();
             i++;
         }
 
         return i;
+    }
+
+    int connectedComponents() {
+        BiconnectivityInspector cin = new BiconnectivityInspector(G);
+
+        int i = 0;
+        Set CC = cin.getConnectedComponents();
+
+        return CC.size();
     }
 }

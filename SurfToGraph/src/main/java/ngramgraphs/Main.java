@@ -41,7 +41,6 @@ public class Main {
             jgraph.convertString(graph);
             jgraph.vectorExtract();
 
-
         //}while( surf!=null ); // for all surface-texts
     }
 }
