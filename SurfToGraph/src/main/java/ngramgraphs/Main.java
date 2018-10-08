@@ -6,24 +6,35 @@ import input_load.TextReader;
 import org.jgrapht.Graph;
 import org.jgrapht.io.ImportException;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] argv) throws IOException, ImportException {
 
         String in_filename = "";
+        String out_filename = "";
+        int out_flag = 0;
+
         for (int i=0 ; i<argv.length ; i++) {
-            if (argv[i].equals("-in")) {
+            if( argv[i].equals("-in") ) {
                 in_filename = argv[++i];
-            } else {
-                System.out.println("Please provide \".txt\" file.");
+            }
+            if( argv[i].equals("-out") ) {
+                out_flag = 1;
+                out_filename = argv[++i];
             }
         }
+        if( in_filename==null ) {
+            System.out.println("Please provide \".txt\" file.");
+            return;
+        }
         TextReader reader = new TextReader(in_filename);
-        String surf = "";
-        //do{ // turn all surface-text to string
-            surf = reader.SurfToString(1);
+        String surf = reader.SurfToString();
+        int iter = 0;
+        while( surf!=null ) { // for all surface-texts
 
             // The default document n-gram graph
             // with min n-gram size and max n-gram size set to 3, and the dist parameter set to 3.
@@ -36,11 +47,36 @@ public class Main {
             size) and renders it, using the utils package, as a DOT string */
             String graph =  utils.graphToDot(dngGraph.getGraphLevel(0), true);
 
-            JGraphTWrapper jgraph = new JGraphTWrapper();
+            JGraphTWrapper jgraph = new JGraphTWrapper(reader.getParams());
 
             jgraph.convertString(graph);
             jgraph.vectorExtract();
 
-        //}while( surf!=null ); // for all surface-texts
+            if( out_flag==0 ){ // standard output
+                if( iter==0 ) { // first iteration
+                    // print names of columns
+                    jgraph.printVNames();
+                    iter++;
+                }
+                jgraph.printVector();
+            } else { // file
+                if( iter==0 ) { // first iteration
+                    // print names of columns in blank file
+                    FileWriter writer = new FileWriter(out_filename, false);
+                    jgraph.printVNames(writer);
+                    iter++;
+                }
+                try {
+                    FileWriter writer = new FileWriter(out_filename,true);
+                    jgraph.printVector(writer);
+                } catch (IOException ex) {
+                    System.out.println("There was a problem creating/writing to the file");
+                    ex.printStackTrace();
+                }
+            }
+
+            surf = reader.SurfToString();
+
+        }
     }
 }

@@ -32,7 +32,6 @@ public class CSVRead {
                 double rms = Double.parseDouble(params[1]);
                 double clx = Double.parseDouble(params[3]);
                 double cly = Double.parseDouble(params[5]);
-
                 int N = Integer.parseInt(params[7]);
 
                 if( N!=Math.sqrt(heights.length-1) ) {

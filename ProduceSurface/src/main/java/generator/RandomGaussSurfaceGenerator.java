@@ -80,6 +80,7 @@ public class RandomGaussSurfaceGenerator {
         this.rL  = args[1];
         this.H   = args[2];
         this.clx = args[3];
+        this.cly = 0.0;
 
         meshGrid();       // init members meshGridX, meshGridY
         RandomSurfaceH(); // init member RandomRoughSurf
