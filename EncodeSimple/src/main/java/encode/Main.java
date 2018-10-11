@@ -57,8 +57,6 @@ public class Main {
             }
         }
 
-        NGGs = new Vector<>();
-
         CSVRead reader = new CSVRead(csvFile,Scale);
         Encoder encoder = new Encoder(SpacesNo, reader.SurfTable.get(0));
         for (int i=1; i<reader.SurfTable.size(); i++) { // for all surfaces in file

@@ -1,6 +1,6 @@
 /*
-* credits: https://www.mkyong.com/
-*/
+ * credits: https://www.mkyong.com/
+ */
 package input_load;
 
 import encode.Surface;
@@ -12,18 +12,17 @@ import java.util.Vector;
 
 public class CSVRead {
 
-    public Vector<Surface> STable;
+    public Vector<Surface> SurfTable;
 
-    public CSVRead(String csvFile) {
+    public CSVRead(String csvFile, int Scale) {
         String line = "";
         String csvSplit1 = ",";
         String csvSplit2 = ":";
 
-        STable = new Vector<>();
+        SurfTable = new Vector<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(csvFile));
-            line = br.readLine();
-            //while ((line = br.readLine()) != null) { // each line is a sequence of heights from a surface
+            while ((line = br.readLine()) != null) { // each line is a sequence of heights from a surface
 
                 // first column is parameters with colon separator
                 // rest columns are heights with comma separator
@@ -33,16 +32,21 @@ public class CSVRead {
                 double rms = Double.parseDouble(params[1]);
                 double clx = Double.parseDouble(params[3]);
                 double cly = Double.parseDouble(params[5]);
+                int N = Integer.parseInt(params[7]);
 
-                Surface data = new Surface(rms,clx,cly,heights.length-1);
+                if( N!=Math.sqrt(heights.length-1) ) {
+                    System.out.println("Error in total number of points in input.");
+                    return;
+                }
+                Surface data = new Surface(rms,clx,cly,heights.length-1,N);
                 for (int i=1; i<heights.length; i++) {
-                    data.add_height(i,new Double(heights[i]));
+                    data.add_height(i,new Double(heights[i])*Math.pow(10,Scale));
                 }
 
-                STable.addElement(data); // add to vector of surfaces
+                SurfTable.addElement(data); // add to vector of surfaces
 
 
-           // }
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

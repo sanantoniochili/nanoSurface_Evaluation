@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1501fb4-43f4-44f9-ae75-59fd53c4b953" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/utils/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/JGraphTWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EncodeSimple/src/main/java/input_load/CSVRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/src/main/java/input_load/CSVRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSimple/src/main/java/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSimple/src/main/java/encode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/EncodeSurf_MinMax.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/outputOfMinMax.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/sorted.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Surface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/encode/Surface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/input_load/CSVRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EncodeSurf_MinMax/src/main/java/input_load/CSVRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input_load/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input_load/TextReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/iit/demokritos/ngramgraphs/JGraphTWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/iit/demokritos/ngramgraphs/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input_load/TextReader.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,42 +45,44 @@
     <session id="1137015297">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4814" />
-          <entry key="txt" value="61" />
+          <entry key="java" value="5550" />
+          <entry key="txt" value="122" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4814" />
-          <entry key="PLAIN_TEXT" value="61" />
+          <entry key="JAVA" value="5550" />
+          <entry key="PLAIN_TEXT" value="122" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="28" />
-          <entry key="java" value="3" />
+          <entry key="class" value="31" />
+          <entry key="java" value="4" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="28" />
-          <entry key="JAVA" value="3" />
+          <entry key="CLASS" value="31" />
+          <entry key="JAVA" value="4" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -79,11 +90,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/JGraphTWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="112">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,37 +115,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.2.1-SNAPSHOT/jgrapht-core-1.2.1-20180920.061126-132.jar!/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/input_load/TextReader.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/input_load/TextReader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="546">
               <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
@@ -155,6 +148,9 @@
         <option value="$PROJECT_DIR$/src/main/java/input_load/TextReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/iit/demokritos/ngramgraphs/JGraphTWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/JGraphTWrapper.java" />
       </list>
     </option>
   </component>
@@ -166,7 +162,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
+    <option name="x" value="-3" />
     <option name="y" value="-3" />
     <option name="width" value="1941" />
     <option name="height" value="1032" />
@@ -177,6 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,28 +211,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="input_load" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SurfToGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SurfToGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngramgraphs" type="462c0819:PsiDirectoryNode" />
+              <item name="iit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538733640397" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OpenJGraph.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539178682526" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -260,9 +248,9 @@
       </method>
     </configuration>
     <configuration name="OutFile" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ngramgraphs.Main" />
+      <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.ngramgraphs.Main" />
       <module name="SurfToGraph" />
-      <option name="PROGRAM_PARAMETERS" value="-in ../EncodeSimple/small_results_text.txt -out Vectors.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-in ../EncodeSimple/small_results_text_10-10-2018.txt -out Vectors_simple_10-10-2018.csv" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -271,9 +259,17 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <output_file path="Output.txt" is_save="true" />
-      <option name="MAIN_CLASS_NAME" value="ngramgraphs.Main" />
+      <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.ngramgraphs.Main" />
       <module name="SurfToGraph" />
       <option name="PROGRAM_PARAMETERS" value="-in ../EncodeSimple/small_results_textPart.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConversion" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.ngramgraphs.Main" />
+      <module name="SurfToGraph" />
+      <option name="PROGRAM_PARAMETERS" value="-in ../EncodeSimple/test.txt " />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,6 +306,7 @@
     <list>
       <item itemvalue="Application.Simple" />
       <item itemvalue="Application.OutFile" />
+      <item itemvalue="Application.TestConversion" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -365,12 +362,12 @@
       <option name="project" value="LOCAL" />
       <updated>1538153461777</updated>
     </task>
-    <task id="LOCAL-00007" summary="remove .idea">
-      <created>1537968490048</created>
+    <task id="LOCAL-00007" summary="Reviewing vector extraction characterstics (eg AvgPath)">
+      <created>1538979910423</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1537968490048</updated>
+      <updated>1538979910423</updated>
     </task>
     <task id="LOCAL-00008" summary="trying to remove .idea">
       <created>1537968632538</created>
@@ -379,7 +376,7 @@
       <option name="project" value="LOCAL" />
       <updated>1537968632538</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -395,7 +392,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30040485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3165992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,15 +401,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49554655" visible="true" weight="0.4377224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49959514" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49635628" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020243" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5044534" side_tool="true" weight="0.39679715" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4979757" weight="0.3291815" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48987854" weight="0.3291815" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49311742" weight="0.3291815" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -457,31 +454,43 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="trying to remove .idea" />
     <MESSAGE value="Creating feature vector for each graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating feature vector for each graph" />
+    <MESSAGE value="Reviewing vector extraction characterstics (eg AvgPath)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reviewing vector extraction characterstics (eg AvgPath)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/JGraphTWrapper.java</url>
+          <line>54</line>
           <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.2.1-SNAPSHOT/jgrapht-core-1.2.1-20180920.061126-132.jar!/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.class</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.2.1-SNAPSHOT/jgrapht-core-1.2.1-20180920.061126-132.jar!/org/jgrapht/alg/shortestpath/FloydWarshallShortestPaths.class</url>
-          <line>162</line>
-          <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>DOTExporter exp = new DOTExporter();
+    FileWriter writer = new FileWriter(&quot;ExportedJGraphT.txt&quot;);
+    exp.exportGraph(jgraph,writer);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>dngGraph.Normalizer</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jgraph</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/../../JInsect.jar!/gr/demokritos/iit/jinsect/structs/UniqueVertexGraph.class">
@@ -610,20 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../JInsect.jar!/gr/demokritos/iit/jinsect/documentModel/representations/DocumentNGramGraph.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4046">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/input_load/TextReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -631,13 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/JGraphTWrapper.java">
+    <entry file="jar://$PROJECT_DIR$/../../JInsect.jar!/gr/demokritos/iit/jinsect/documentModel/representations/DocumentNGramGraph.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="14">
           <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,10 +640,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ngramgraphs/Main.java">
+    <entry file="file://$PROJECT_DIR$/../EncodeSimple/src/main/java/encode/Encoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="98">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/input_load/TextReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/ngramgraphs/JGraphTWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
