@@ -1,14 +1,14 @@
+package gr.demokritos.iit.srms.encode;
+
 /* Project is not finished.
-* Till now: Actions to split [minH,maxH] of surface to zones with same amount of points. Creating array of boundaries.
-* Beginning from both ends and meeting in the middle.
-* Probably: Find concentration to each zone's mean height and rearrange boundaries.
-* Must: Encode points to letters based on input number of spaces.
-* (Impl 4 of encodings)
+ * Till now: Actions to split [minH,maxH] of surface to zones with same amount of points. Creating array of boundaries.
+ * Beginning from both ends and meeting in the middle.
+ * Probably: Find concentration to each zone's mean height and rearrange boundaries.
+ * Must: Encode points to letters based on input number of spaces.
+ * (Impl 6 of encodings)
  */
 
-package gr.demokritos.iit.smm.encode;
-
-import gr.demokritos.iit.smm.input_load.CSVRead;
+import gr.demokritos.iit.srms.input_load.CSVRead;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -24,12 +24,12 @@ public class Main {
         int out_flag = 0;
 
         for (int i=0 ; i<argv.length ; i++) {
-            if ( argv[i].equals("-in") ) {
+            if (argv[i].equals("-in")) {
                 csvFile = argv[++i];
             }
             // in case input is not measured in nm
             // e.g. to multiply all by 10^1: -scale 1
-            if ( argv[i].equals("-scale") ) {
+            if (argv[i].equals("-scale")) {
                 Scale = Integer.parseInt(argv[++i]);
             }
             // print text to output file
@@ -49,17 +49,21 @@ public class Main {
             // number of spaces to split into
             // must be between 1-26
             if( argv[i].equals("-z") ) {
+                i++;
                 do {
                     System.out.println("Enter number of spaces between 1 and 26");
-                    SpacesNo = Integer.parseInt(argv[++i]);
+                    SpacesNo = Integer.parseInt(argv[i]);
                 }while( SpacesNo < 1 || SpacesNo > 26 );
             }
         }
 
         CSVRead reader = new CSVRead(csvFile,Scale);
+
         Encoder encoder = new Encoder(SpacesNo, reader.SurfTable.get(0));
         for (int i=1; i<reader.SurfTable.size(); i++) { // for all surfaces in file
 
+            //change values from heights to distance from c (rms)
+            encoder.changeHeights(Scale);
             // encode in text and print surface
             encoder.InText();
             if( out_flag==0 ){ // standard output
@@ -77,6 +81,7 @@ public class Main {
             encoder.changeSurface(reader.SurfTable.get(i)); // next surface to encode
         }
         // print last surface
+        encoder.changeHeights(Scale);
         encoder.InText();
         if( out_flag==0 ){ // standard output
             encoder.printText();
