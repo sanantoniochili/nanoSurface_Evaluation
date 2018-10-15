@@ -108,3 +108,17 @@ A ".txt" file containing texts that correspond to encoded surfaces. Texts are se
 [OUTPUT]
 
 N gram graphs produced by the texts provided.
+
+## regression.py
+
+Code to evaluate the result of machine learning algorithms which predict the parameters of the surface production. Input is file with feature vectors of the N Gram Graphs mentioned above along with the true values of the parameters.
+
+[INPUT]
+
+A ".csv" file with N columns and M lines. Each line is a surface. The first k values are the traits of the graphs to be used for the predictions and the rest N-k values are the parameters that characterize the surface.
+
+[OUTPUT]
+
+Two ".txt" files:
+- Metrics of regression
+- True and predicted values in arrays
