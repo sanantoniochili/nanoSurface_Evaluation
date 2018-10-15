@@ -1,8 +1,9 @@
 # nanoSurfaceEval
-Nanostructured surfaces' infrastructure evaluation using N Gram Graphs
+Nanostructured surfaces' infrastructure characterization using N Gram Graphs. Machine learning experiments based on the N Gram Graphs' representation of the surfaces.
 
 ## Produce_Surface
 
+Application producing NxN heights corresponding to NxN points of a random Gaussian isotropic or non-isotropic surface. 
 Use the following flags:
 
 * -in \<input filename>
