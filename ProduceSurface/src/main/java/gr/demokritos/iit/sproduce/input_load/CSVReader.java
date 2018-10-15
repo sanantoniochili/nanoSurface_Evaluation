@@ -1,4 +1,4 @@
-package gr.demokritos.iit.sproduce.generator;
+package gr.demokritos.iit.sproduce.input_load;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

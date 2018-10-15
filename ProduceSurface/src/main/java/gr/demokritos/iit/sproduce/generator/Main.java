@@ -1,6 +1,7 @@
 
 package gr.demokritos.iit.sproduce.generator;
 
+import gr.demokritos.iit.sproduce.input_load.CSVReader;
 import org.jzy3d.chart.Chart;
 import org.jzy3d.chart.ChartLauncher;
 import org.jzy3d.chart.factories.AWTChartComponentFactory;
