@@ -111,7 +111,7 @@ N gram graphs produced by the texts provided.
 
 ## regression.py
 
-Code to evaluate the result of machine learning algorithms which predict the parameters of the surface production. Input is file with feature vectors of the N Gram Graphs mentioned above along with the true values of the parameters.
+Code to evaluate the result of machine learning algorithms which predict the parameters of the surface production. Input is file with feature vectors of the N Gram Graphs mentioned above along with the true values of the parameters. Using SKlearn library implementations for linear, ridge and lasso regression with cross validation.
 
 [INPUT]
 
