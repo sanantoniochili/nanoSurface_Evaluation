@@ -6,7 +6,7 @@
 package gr.demokritos.ssimple.encode;
 
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
-import gr.demokritos.ssimple.input._load.CSVRead;
+import gr.demokritos.ssimple.input_load.CSVRead;
 
 import java.io.File;
 import java.io.FileWriter;

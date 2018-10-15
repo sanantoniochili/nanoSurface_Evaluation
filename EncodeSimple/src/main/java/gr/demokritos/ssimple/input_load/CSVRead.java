@@ -1,7 +1,7 @@
 /*
 * credits: https://www.mkyong.com/
 */
-package gr.demokritos.ssimple.input._load;
+package gr.demokritos.ssimple.input_load;
 
 import gr.demokritos.ssimple.encode.Surface;
 
