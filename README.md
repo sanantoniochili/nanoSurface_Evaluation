@@ -31,6 +31,7 @@ Use standard input to invoke 3D surface plotter.
 
 ## EncodeSimple
 
+Application using the first (most simple) way of encoding a surface as suggested in file "Encodings.pdf": splitting space [-100nm,100nm] to same-length subspaces and name each subspace with a letter.
 Use the following flags:
 
 * -in \<input filename>
@@ -50,7 +51,53 @@ output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
 
 A text denoting a height-zone [x,y], -100nm<=x<y<=100nm for every letter.
 
+## EncodeSurf_MinMax
+
+Application using the forth way of encoding a surface as suggested in file "Encodings.pdf": splitting space [minH,maxH] of surface to subspaces with same amount of points and name each subspace with a letter.
+Use the following flags:
+
+* -in \<input filename>
+* -z \<number of spaces to split into>
+* -scale \<n (heights measured in nanometres*10^n)>
+* -out \<output filename>
+
+[INPUT]
+
+input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
+
+A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
+
+[OUTPUT]
+
+output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
+
+A text denoting a height-zone [x,y].
+
+## EncodeRMS_MinMax
+
+Application using the sixth way of encoding a surface as suggested in file "Encodings.pdf": splitting space [minDr,maxDr] of surface to subspaces with same amount of points and name each subspace with a letter, where Dr is +|height - rms| or -|height-rms| for positive or negative height. 
+Use the following flags:
+
+* -in \<input filename>
+* -z \<number of spaces to split into>
+* -scale \<n (heights measured in nanometres*10^n)>
+* -out \<output filename>
+
+[INPUT]
+
+input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
+
+A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
+
+[OUTPUT]
+
+output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
+
+A text denoting a height-zone [x,y].
+
 ## SurfToGraph
+
+Application to convert a text representing a Gaussian surface to a N Gram Graph. After the graph has been formed, we measure the graph's most important traits (degree, shortest paths etc.) in order to extract a feature vector.
 
 [INPUT]
 
@@ -61,3 +108,17 @@ A ".txt" file containing texts that correspond to encoded surfaces. Texts are se
 [OUTPUT]
 
 N gram graphs produced by the texts provided.
+
+## regression.py
+
+Code to evaluate the result of machine learning algorithms which predict the parameters of the surface production. Input is file with feature vectors of the N Gram Graphs mentioned above along with the true values of the parameters. Using SKlearn library implementations for linear, ridge and lasso regression with cross validation.
+
+[INPUT]
+
+A ".csv" file with N columns and M lines. Each line is a surface. The first k values are the traits of the graphs to be used for the predictions and the rest N-k values are the parameters that characterize the surface.
+
+[OUTPUT]
+
+Two ".txt" files:
+- Metrics of regression
+- True and predicted values in arrays
