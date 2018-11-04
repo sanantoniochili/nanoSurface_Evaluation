@@ -29,9 +29,9 @@ output file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<he
 The results are a matrix of heights corresponding to the surface points.
 Use standard input to invoke 3D surface plotter.
 
-## EncodeSimple
+## Encoding
 
-Application using the first (most simple) way of encoding a surface as suggested in file "Encodings.pdf": splitting space [-100nm,100nm] to same-length subspaces and name each subspace with a letter.
+Application to encode heights to letters of the Latin alphabet using the first oneof the methods suggested in file "Encodings.pdf".
 Use the following flags:
 
 * -in \<input filename>
@@ -50,50 +50,6 @@ A ".csv" file containing surface characteristics. First column contains paramete
 output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
 
 A text denoting a height-zone [x,y], -100nm<=x<y<=100nm for every letter.
-
-## EncodeSurf_MinMax
-
-Application using the forth way of encoding a surface as suggested in file "Encodings.pdf": splitting space [minH,maxH] of surface to subspaces with same amount of points and name each subspace with a letter.
-Use the following flags:
-
-* -in \<input filename>
-* -z \<number of spaces to split into>
-* -scale \<n (heights measured in nanometres*10^n)>
-* -out \<output filename>
-
-[INPUT]
-
-input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
-
-A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
-
-[OUTPUT]
-
-output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
-
-A text denoting a height-zone [x,y].
-
-## EncodeRMS_MinMax
-
-Application using the sixth way of encoding a surface as suggested in file "Encodings.pdf": splitting space [minDr,maxDr] of surface to subspaces with same amount of points and name each subspace with a letter, where Dr is +|height - rms| or -|height-rms| for positive or negative height. 
-Use the following flags:
-
-* -in \<input filename>
-* -z \<number of spaces to split into>
-* -scale \<n (heights measured in nanometres*10^n)>
-* -out \<output filename>
-
-[INPUT]
-
-input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
-
-A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
-
-[OUTPUT]
-
-output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
-
-A text denoting a height-zone [x,y].
 
 ## SurfToGraph
 
