@@ -45,6 +45,7 @@ Use the following flags:
 input file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<height>,)*\<height> surface per line
 
 A ".csv" file containing surface characteristics. First column contains parameters in a form \<parameter>:\<value> and every other column contains the height of the surface's points (column per height).
+Note: When using methods 4 or 6 (from \"Encodings.pdf\") it is discouraged to use flag -z with a value greater than 26
 
 [OUTPUT]
 
