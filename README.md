@@ -35,9 +35,10 @@ Application to encode heights to letters of the Latin alphabet using the first o
 Use the following flags:
 
 * -in \<input filename>
-* -z \<number of spaces to split [-100nm,100nm] into>
+* -z \<number of spaces to split into>
 * -scale \<n (heights measured in nanometres*10^n)>
 * -out \<output filename>
+* -method \<method of encoding>
 
 [INPUT]
 
