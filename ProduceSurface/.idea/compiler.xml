@@ -9,8 +9,5 @@
         <module name="Produce_Surface" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Produce_Surface" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
