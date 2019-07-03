@@ -16,7 +16,6 @@
 
 package gr.demokritos.iit.sproduce.generator;
 
-import gr.demokritos.iit.sproduce.input_load.CSVReader;
 import org.jzy3d.chart.Chart;
 import org.jzy3d.chart.ChartLauncher;
 import org.jzy3d.chart.factories.AWTChartComponentFactory;
@@ -80,8 +79,8 @@ public class Main {
             RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
             plot_surface(RG);
 
-            CSVReader reader = new CSVReader();
-            reader.test("stdin_results.csv");
+//            CSVReader reader = new CSVReader();
+//            reader.test("stdin_results.csv");
 
         // read from csv file with multiple surface parameters
         } else {
