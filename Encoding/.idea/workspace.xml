@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f05f7f5-91f6-4be5-a978-d58107f3d507" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/input_load/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/input_load/CSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/FFT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/FFT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/Linspace.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/Linspace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/StdOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/utils/StdOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -206,7 +194,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />

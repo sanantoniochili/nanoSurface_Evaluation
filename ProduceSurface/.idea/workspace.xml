@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/input_load/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/input_load/CSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/FFT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/FFT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/Linspace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/Linspace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/StdOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/utils/StdOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,18 +33,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,15 +131,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sproduce" type="462c0819:PsiDirectoryNode" />
               <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Produce_Surface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProduceSurface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sproduce" type="462c0819:PsiDirectoryNode" />
-              <item name="input_load" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Produce_Surface" type="b2602c69:ProjectViewProjectNode" />
