@@ -1,0 +1,4 @@
+Intellij Config
+
+Module SDK 1.8
+Java version 8
