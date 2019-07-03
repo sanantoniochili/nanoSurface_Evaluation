@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_miglayout_miglayout_3_7_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jmatio_jmatio_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_main_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_aarch64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_armv6_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6hf_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_macosx_universal_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_main_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_aarch64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_armv6_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6hf_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_macosx_universal_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_amd64_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_i586_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jzy3d_jzy3d_api_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jzy3d_jzy3d_jdt_core_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_smurn_jply_0_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/ImError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/ImError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -267,6 +224,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SurfToGraph" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -407,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
