@@ -125,7 +125,7 @@ public class Main {
 
     }
 
-    static private RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError, IOException {
+    static protected RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError, IOException {
         RandomGaussSurfaceGenerator RG;
         if( y_flag==0 )
             RG = new RandomGaussSurfaceGenerator(args_); // isotropic
@@ -146,7 +146,7 @@ public class Main {
         return RG;
     }
 
-    static private void plot_surface(RandomGaussSurfaceGenerator RG) throws IOException {
+    static protected void plot_surface(RandomGaussSurfaceGenerator RG) throws IOException {
         double[][] distDataProp = RG.Surf;
 
         // Build a polygon list

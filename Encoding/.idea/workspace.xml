@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f05f7f5-91f6-4be5-a978-d58107f3d507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_11_openjdk_amd64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Encoding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/encode/Surface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/loadinput/CSVRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/utils/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/utils/ContinuousSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/utils/Linspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gr.demokritos.iit/utils/TwoDirectSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/SurfToGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/SurfToGraph.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../envConfig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../envConfig.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="-2064">
+              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -57,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-316">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="1053">
+              <caret line="108" column="39" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -70,10 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Surface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-326">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="-15">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="330">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -104,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="215">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -117,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="76">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -129,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -141,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="540">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -151,6 +132,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>scale</find>
+      <find>private</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -184,11 +171,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="38" />
+    <option name="width" value="960" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,7 +183,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,6 +257,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +290,7 @@
     <configuration name="EncodingSimple" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.encode.Main" />
       <module name="Encoding" />
-      <option name="PROGRAM_PARAMETERS" value="-in surface128_50_8_8.csv -z 40 -scale 1 -method 1 -out ensurface128_50_8_8.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-in surface512_50_8_8.csv -z 40 -scale 3 -method 1 -out ensurface512_50_8_8_scaletest.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -324,10 +310,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="0" y="38" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26674044" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27001068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -336,7 +322,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843652" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,10 +349,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Surface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="330">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -376,18 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -396,39 +394,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="540">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Surface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-326">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="-2064">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -436,10 +413,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="1053">
+          <caret line="108" column="39" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

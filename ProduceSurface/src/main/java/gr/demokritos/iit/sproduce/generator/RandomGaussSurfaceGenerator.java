@@ -22,7 +22,6 @@ import java.lang.Math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import gr.demokritos.iit.sproduce.utils.*;
 import gr.demokritos.iit.sproduce.utils.Complex;
 import gr.demokritos.iit.sproduce.utils.FFT_2D;
 import gr.demokritos.iit.sproduce.utils.Linspace;
@@ -43,9 +42,9 @@ public class RandomGaussSurfaceGenerator {
     double clx; // correlation length in x
     double cly; // correlation length in y
 
-    private double[][] RandomRoughSurf;
-    private double[][] meshGridX;
-    private double[][] meshGridY;
+    protected double[][] RandomRoughSurf;
+    protected double[][] meshGridX;
+    protected double[][] meshGridY;
 
     public double[][] Surf;    //height results
 
@@ -141,7 +140,7 @@ public class RandomGaussSurfaceGenerator {
      * Y: same vector in each column
      * of evenly spaced points between -rL/2 and rL/2
      */
-    private void meshGrid() {
+    protected void meshGrid() {
         double begin = -rL/2;
         double end = rL/2;
 
@@ -168,7 +167,7 @@ public class RandomGaussSurfaceGenerator {
      * Create matrix NxN of random normal distributed values
      * multiplied by h (rms height)
      */
-    private void RandomSurfaceH() {
+    protected void RandomSurfaceH() {
         RandomRoughSurf = new double[N][N];
         Random rand = new Random();
         for (int i=0 ; i<N ; i++) {
@@ -185,7 +184,7 @@ public class RandomGaussSurfaceGenerator {
      *
      * F is size N*N
      */
-    private double[][] GaussianFilter(double arg) {
+    protected double[][] GaussianFilter(double arg) {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
@@ -202,7 +201,7 @@ public class RandomGaussSurfaceGenerator {
      *
      * F is size N*N
      */
-    private double[][] GaussianFilter() {
+    protected double[][] GaussianFilter() {
         double[][] F = new double[N][N];
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
@@ -253,7 +252,7 @@ public class RandomGaussSurfaceGenerator {
     /*
      * round double value to n decimals
      */
-    private static double round(double value, int places) {
+    protected static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
 
         BigDecimal bd = new BigDecimal(Double.toString(value));

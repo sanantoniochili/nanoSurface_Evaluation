@@ -12,8 +12,8 @@ package gr.demokritos.iit.sproduce.utils;
 
 public class FFT_2D extends FFT {
 
-    private int N;
-    private int M;
+    protected int N;
+    protected int M;
 
     public FFT_2D(int dim1, int dim2) {
         this.N = dim1;
