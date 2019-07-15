@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package encode;
+package gr.demokritos.iit.encode;
 /*
  * Assuming that most heights vary between -100 and 100 nm among nanostructured surfaces.
  * Splitting space [-100nm,100nm] to even subspaces and  labelling them with Latin letters.
@@ -27,7 +27,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import loadinput.CSVRead;
+import gr.demokritos.iit.loadinput.CSVRead;
 
 public class Main {
     static int SpacesNo = 1;

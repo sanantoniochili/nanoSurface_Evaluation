@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="" />
+    <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Encoding/.idea/libraries/java_11_openjdk_amd64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Encoding/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/Encoding.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/encode/Surface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/loadinput/CSVRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/utils/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/utils/ContinuousSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/utils/Linspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/Linspace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/gr.demokritos.iit/utils/TwoDirectSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/SurfToGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/SurfToGraph.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../envConfig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../envConfig.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="66">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -28,11 +54,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#0#3046#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="690">
               <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,12 +197,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SurfToGraph" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Encoding" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -169,10 +220,10 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="1024_500_8_8" type="Application" factoryName="Application">
+    <configuration name="Gauss Generator" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.sproduce.generator.Main" />
       <module name="Produce_Surface" />
-      <option name="PROGRAM_PARAMETERS" value="-N 1024 -rL 500 -h 8 -clx 8 -out surface1024_500_8_8.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-in nano-Database-small.csv -out surface128_50_8_8.csv -N 128" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,10 +243,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15771998" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1610404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -228,16 +279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -281,16 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#3046#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/utils/FFT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -301,30 +332,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/input_load/CSVReader.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="690">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="450">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="66">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#3046#0" expanded="true" />
           </folding>
         </state>
       </provider>

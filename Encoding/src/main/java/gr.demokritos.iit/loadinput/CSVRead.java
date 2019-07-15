@@ -14,13 +14,13 @@
 * limitations under the License.
 */
 
-package loadinput;
+package gr.demokritos.iit.loadinput;
 
 /*
  * credits: https://www.mkyong.com/
  */
 
-import encode.Surface;
+import gr.demokritos.iit.encode.Surface;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

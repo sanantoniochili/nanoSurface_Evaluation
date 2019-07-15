@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package encode;
+package gr.demokritos.iit.encode;
 
 import javafx.util.Pair;
 import java.util.Collections;

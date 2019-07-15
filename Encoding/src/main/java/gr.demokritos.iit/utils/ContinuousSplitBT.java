@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package utils;
+package gr.demokritos.iit.utils;
 
 import java.util.Vector;
 

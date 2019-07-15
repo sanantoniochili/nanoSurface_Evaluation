@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package encode;
+package gr.demokritos.iit.encode;
 
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import javafx.util.Pair;
@@ -23,10 +23,10 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Vector;
 
-import utils.BinaryTree;
-import utils.ContinuousSplitBT;
+import gr.demokritos.iit.utils.BinaryTree;
+import gr.demokritos.iit.utils.ContinuousSplitBT;
+import gr.demokritos.iit.utils.TwoDirectSplitBT;
 import utils.Linspace;
-import utils.TwoDirectSplitBT;
 
 abstract class Encoder {
     // surface

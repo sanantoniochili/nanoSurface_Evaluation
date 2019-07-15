@@ -18,7 +18,7 @@ package gr.demokritos.iit.s2graph.ngramgraphs;
 
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import gr.demokritos.iit.jinsect.utils;
-import gr.demokritos.iit.s2graph.input_load.TextReader;
+import gr.demokritos.iit.s2graph.ngramgraphs.TextReader;
 import org.jgrapht.io.ImportException;
 
 import java.io.FileWriter;
