@@ -86,43 +86,43 @@ public class Main {
             System.exit(1);
         }
 
-        // has the buildfile argument been passed?
-        if( !cmd.hasOption( "in" ) ) {
-            // check if needed remain options are added
-            if( !( cmd.hasOption( "rL" ) && cmd.hasOption( "h" ) && cmd.hasOption( "clx" )) ) {
-                System.out.println("Surface length, rms height and correlation lentgh x axis are needed");
-
-                System.exit(1);
-            }
-        }
-
         String out_filename= "";
         String in_filename = "";
         String cvsSplitBy  = ",";
-        double[] args_     = new double[5];
         int y_flag 	       = 0;
         int out_flag       = 0;
         int in_flag        = 0;
+        double[] args_     = new double[5];
+        args_[0] = Double.parseDouble((String) cmd.getOptionValue("N"));
 
-        for (int i=0 ; i<argv.length ; i++) {
-            if( argv[i].equals("-in") ) {
-                in_filename = argv[++i];
-                in_flag = 1;
+        // check if the input file name argument has been passed
+        if( !cmd.hasOption( "in" ) ) { // if not, we use standard input
+
+            System.out.println("No input file detected. Using command line...");
+
+            // check if needed remain arguments are added
+            if( !( cmd.hasOption( "rL" ) && cmd.hasOption( "h" ) && cmd.hasOption( "clx" )) ) {
+                System.out.println("Surface length, rms height and correlation lentgh x axis are necessary");
+                System.exit(1);
+            } else {
+                args_[1] = Double.parseDouble((String) cmd.getOptionValue("rL"));
+                args_[2] = Double.parseDouble((String) cmd.getOptionValue("h"));
+                args_[3] = Double.parseDouble((String) cmd.getOptionValue("clx"));
             }
-            if( argv[i].equals("-N") )
-                args_[0] = Double.parseDouble(argv[++i]);
-            if( argv[i].equals("-rL") )
-                args_[1] = Double.parseDouble(argv[++i]);
-            if( argv[i].equals("-h") )
-                args_[2] = Double.parseDouble(argv[++i]);
-            if( argv[i].equals("-clx") )
-                args_[3] = Double.parseDouble(argv[++i]);
-            if( argv[i].equals("-cly") ){
-                args_[4] = Double.parseDouble(argv[++i]);
-                y_flag = 1;
-            }
-            if( argv[i].equals("-out") ){
-                out_filename = argv[++i];
+        } else {
+            in_filename = cmd.getOptionValue("input");
+            in_flag = 1;
+        }
+
+        if( cmd.hasOption( "cly" )) { // check if cly argument is passed
+            System.out.println("Found cly argument. Surface is non-isotropic.");
+
+            args_[4] = Double.parseDouble((String) cmd.getOptionValue("cly"));
+            y_flag = 1;
+        }
+
+            if( cmd.hasOption( "out" ) ){
+                out_filename = cmd.getOptionValue("out");
                 out_flag = 1;
 
                 // check if file exists
@@ -134,7 +134,7 @@ public class Main {
                     writer.close();
                 }
             }
-        }
+
         // read from standard input
         if( in_flag==0 ) {
             RandomGaussSurfaceGenerator RG = produce(args_,y_flag,out_flag,out_filename);
