@@ -9,9 +9,14 @@
  */
 
 package gr.demokritos.iit.sproduce.utils;
+import edu.princeton.cs.algs4.FFT;
+import edu.princeton.cs.algs4.Complex;
+import edu.princeton.cs.algs4.StdOut;
 
-public class FFT_2D extends FFT {
 
+public class FFT_2D {
+
+    FFT fft_inst;
     protected int N;
     protected int M;
 
@@ -36,14 +41,14 @@ public class FFT_2D extends FFT {
         Complex[][] res = new Complex[N][M];
 
         for (int i=0 ; i<N ; i++) { // for each row
-            temp[i] = fft(X_cox[i]);
+            temp[i] = fft_inst.fft(X_cox[i]);
         }
         for (int j=0 ; j<M ; j++) { // for each column
             Complex[] seq = new Complex[N];
             for (int i=0 ; i<N ; i++) { // for each row
                 seq[i] = temp[i][j];
             }
-            Complex[] res_col = fft(seq); // 1D array column of result
+            Complex[] res_col = fft_inst.fft(seq); // 1D array column of result
             for (int i=0 ; i<N ; i++) {
                 res[i][j] = res_col[i]; // save sequence to result column
             }
@@ -57,14 +62,14 @@ public class FFT_2D extends FFT {
         Complex[][] res = new Complex[N][M];
 
         for (int i=0 ; i<N ; i++) { // for each row
-            temp[i] = ifft(X_cox[i]);
+            temp[i] = fft_inst.ifft(X_cox[i]);
         }
         for (int j=0 ; j<M ; j++) { // for each column
             Complex[] seq = new Complex[N];
             for (int i=0 ; i<N ; i++) { // for each row
                 seq[i] = temp[i][j];
             }
-            Complex[] res_col = ifft(seq); // 1D array column of result
+            Complex[] res_col = fft_inst.ifft(seq); // 1D array column of result
             for (int i=0 ; i<N ; i++) {
                 res[i][j] = res_col[i]; // save sequence to result column
             }

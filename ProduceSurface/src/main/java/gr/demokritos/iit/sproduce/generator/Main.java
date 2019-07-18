@@ -16,6 +16,8 @@
 
 package gr.demokritos.iit.sproduce.generator;
 
+import org.apache.commons.cli.*;
+
 import org.jzy3d.chart.Chart;
 import org.jzy3d.chart.ChartLauncher;
 import org.jzy3d.chart.factories.AWTChartComponentFactory;
@@ -31,9 +33,68 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h1>Produce Surface</h1>
+ * Main class of program Produce Surface which creates a file with
+ * a given number of real numbers considered as surface heights.
+ * The resulting surface is either Gaussian isotropic or non-isotropic.
+ */
 public class Main {
 
     public static void main(String[] argv) throws Exception{
+
+        Options options = new Options();
+
+        Option N = new Option("N", "npoints", true, "number (power of 2) of surface points along square side");
+        N.setRequired(true);
+        options.addOption(N);
+
+        Option input = new Option("in", "input", true, "input file");
+        input.setRequired(false);
+        options.addOption(input);
+
+        Option rL = new Option("rL", "length", true, "length of surface along square side");
+        rL.setRequired(false);
+        options.addOption(rL);
+
+        Option rms = new Option("h", "rms_height", true, "rms height");
+        rms.setRequired(false);
+        options.addOption(rms);
+
+        Option clx = new Option("clx", "clx", true, "correlation length x axis");
+        clx.setRequired(false);
+        options.addOption(clx);
+
+        Option cly = new Option("cly", "cly", true, "correlation length y axis");
+        cly.setRequired(false);
+        options.addOption(cly);
+
+        Option output = new Option("out", "output", true, "output file");
+        output.setRequired(false);
+        options.addOption(output);
+
+        CommandLineParser parser = new DefaultParser();
+        HelpFormatter formatter = new HelpFormatter();
+        CommandLine cmd = null;
+
+        try {
+            cmd = parser.parse(options, argv);
+        } catch (ParseException e) {
+            System.out.println(e.getMessage());
+            formatter.printHelp("utility-name", options);
+
+            System.exit(1);
+        }
+
+        // has the buildfile argument been passed?
+        if( !cmd.hasOption( "in" ) ) {
+            // check if needed remain options are added
+            if( !( cmd.hasOption( "rL" ) && cmd.hasOption( "h" ) && cmd.hasOption( "clx" )) ) {
+                System.out.println("Surface length, rms height and correlation lentgh x axis are needed");
+
+                System.exit(1);
+            }
+        }
 
         String out_filename= "";
         String in_filename = "";

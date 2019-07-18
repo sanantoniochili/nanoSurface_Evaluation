@@ -22,7 +22,8 @@ import java.lang.Math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import gr.demokritos.iit.sproduce.utils.Complex;
+import edu.princeton.cs.algs4.Complex;
+
 import gr.demokritos.iit.sproduce.utils.FFT_2D;
 import gr.demokritos.iit.sproduce.utils.Linspace;
 
