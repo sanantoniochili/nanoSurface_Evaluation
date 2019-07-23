@@ -19,6 +19,8 @@ package gr.demokritos.iit.s2graph.ngramgraphs;
 import gr.demokritos.iit.jinsect.documentModel.representations.DocumentNGramGraph;
 import gr.demokritos.iit.jinsect.utils;
 import gr.demokritos.iit.s2graph.ngramgraphs.TextReader;
+
+import org.apache.commons.cli.*;
 import org.jgrapht.io.ImportException;
 
 import java.io.FileWriter;
@@ -31,19 +33,35 @@ public class Main {
         String out_filename = "";
         int out_flag = 0;
 
-        for (int i=0 ; i<argv.length ; i++) {
-            if( argv[i].equals("-in") ) {
-                in_filename = argv[++i];
-            }
-            if( argv[i].equals("-out") ) {
-                out_flag = 1;
-                out_filename = argv[++i];
-            }
+        Options options = new Options();
+
+        Option input = new Option("in", "input", true, "input file");
+        input.setRequired(true);
+        options.addOption(input);
+
+        Option output = new Option("out", "output", true, "output file");
+        output.setRequired(false);
+        options.addOption(output);
+
+        CommandLineParser parser = new DefaultParser();
+        HelpFormatter formatter = new HelpFormatter();
+        CommandLine cmd = null;
+
+        try {
+            cmd = parser.parse(options, argv);
+        } catch (ParseException e) {
+            System.out.println(e.getMessage());
+            formatter.printHelp("utility-name", options);
+
+            System.exit(1);
         }
-        if( in_filename==null ) {
-            System.out.println("Please provide \".txt\" file.");
-            return;
+
+        in_filename = cmd.getOptionValue("in");
+        if( cmd.hasOption("out") ){
+            out_filename = cmd.getOptionValue("out");
+            out_flag = 1;
         }
+
         TextReader reader = new TextReader(in_filename);
         String surf = reader.SurfToString();
         int iter = 0;

@@ -3,10 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="dbb77823-3bbf-453c-acb9-651a1a4d651b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/Encoding.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/target/classes/gr/demokritos/iit/encode/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/target/classes/gr/demokritos/iit/encode/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/utils/FFT_2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SurfToGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SurfToGraph.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/s2graph/ngramgraphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/s2graph/ngramgraphs/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="404">
+              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -37,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="2025">
               <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -47,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="435">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -59,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="630">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -77,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>private</find>
+      <find>array</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,17 +93,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="38" />
-    <option name="width" value="960" />
-    <option name="height" value="1082" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -103,7 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,7 +150,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +177,7 @@
     <configuration name="SurfToGraph" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.s2graph.ngramgraphs.Main" />
       <module name="SurfToGraph" />
-      <option name="PROGRAM_PARAMETERS" value="-in ensurface256_50_8_8.txt -out graph256_50_8_8.csv" />
+      <option name="PROGRAM_PARAMETERS" value="--input ensurface256_50_8_8.txt -out graph256_50_8_8.csv" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,10 +197,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="38" width="1920" height="1082" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26360726" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28334257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -200,7 +209,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.32843652" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.33801296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,32 +233,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java</url>
-          <line>97</line>
+          <line>115</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/graph128_50_8_8.txt" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+        <state relative-caret-position="404">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -257,10 +253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="2025">
+          <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -270,8 +266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="435">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -332,6 +335,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

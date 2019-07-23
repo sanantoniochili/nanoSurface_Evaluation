@@ -22,6 +22,8 @@ package gr.demokritos.iit.encode;
 
 //import gr.demokritos.ssimple.input_load.CSVRead;
 
+import org.apache.commons.cli.*;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -40,46 +42,58 @@ public class Main {
         int method = 0;
         int out_flag = 0;
 
-        for (int i=0 ; i<argv.length ; i++) {
-            if (argv[i].equals("-in")) {
-                csvFile = argv[++i];
-            }
-            if (argv[i].equals("-z")) { // number of spaces to divide [-100nm,100nm] into
-                SpacesNo = Integer.parseInt(argv[++i]);
-               /* if( SpacesNo>26 && (SpacesNo%2 != 0) ){
-                    System.out.println("Please provide different number of spaces");
-                }*/
+        Options options = new Options();
 
-            }
-            // in case input is not measured in nm
-            // e.g. to multiply all by 10^1: -scale 1
-            if (argv[i].equals("-scale")) {
-                Scale = Integer.parseInt(argv[++i]);
-            }
-            // print text to output file
-            if( argv[i].equals("-out") ){
-                out_filename = argv[++i];
-                out_flag = 1;
+        Option input = new Option("in", "input", true, "input file");
+        input.setRequired(true);
+        options.addOption(input);
 
-                // check if file exists
-                File f = new File(out_filename);
-                // erase content if exists
-                if(f.exists() && !f.isDirectory()) {
-                    FileWriter writer = new FileWriter(out_filename);
-                    writer.write("");
-                    writer.close();
-                }
-            }
-            if( argv[i].equals("-method") ){
-                method = Integer.parseInt(argv[++i]);
-            }
+        Option spaces = new Option("z", "spaces", true, "number of spaces to split into");
+        spaces.setRequired(true);
+        options.addOption(spaces);
 
+        Option scale = new Option("s", "scale", true, "heights measured in nanometres*10^n");
+        scale.setRequired(true);
+        options.addOption(scale);
+
+        Option method_ = new Option("m", "method", true, "method of encoding");
+        method_.setRequired(true);
+        options.addOption(method_);
+
+        Option output = new Option("out", "output", true, "output file");
+        output.setRequired(false);
+        options.addOption(output);
+
+        CommandLineParser parser = new DefaultParser();
+        HelpFormatter formatter = new HelpFormatter();
+        CommandLine cmd = null;
+
+        try {
+            cmd = parser.parse(options, argv);
+        } catch (ParseException e) {
+            System.out.println(e.getMessage());
+            formatter.printHelp("utility-name", options);
+
+            System.exit(1);
         }
-        while( method==0 ){
-            System.out.println("Please select method of encoding:");
-            Scanner scanner = new Scanner(System.in);
-            method = Integer.parseInt(scanner.next());
+
+        csvFile = cmd.getOptionValue("in");
+        SpacesNo = Integer.parseInt((String) cmd.getOptionValue("z")); // number of spaces to divide [-100nm,100nm] into
+        Scale = Integer.parseInt((String) cmd.getOptionValue("s")); // in case input is not measured in nm
+
+        if( cmd.hasOption("out") ) {  // print text to output file
+            out_filename = cmd.getOptionValue("out");
+            out_flag = 1;
         }
+
+        File f = new File(out_filename);  // check if file exists
+        if(f.exists() && !f.isDirectory()) { // erase content if exists
+            FileWriter writer = new FileWriter(out_filename);
+            writer.write("");
+            writer.close();
+        }
+
+        method = Integer.parseInt(cmd.getOptionValue("m")); // code of preferred method of encoding
 
         Encoder encoder = null;
         CSVRead reader = new CSVRead(csvFile,Scale);
