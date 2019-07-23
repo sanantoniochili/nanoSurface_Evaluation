@@ -3,17 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="dbb77823-3bbf-453c-acb9-651a1a4d651b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/Encoding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/target/classes/gr/demokritos/iit/encode/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/target/classes/gr/demokritos/iit/encode/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/ImError.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/ImError.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/generator/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/FFT_2D.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/FFT_2D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/Linspace.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/Linspace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/gr/demokritos/iit/sproduce/utils/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SurfToGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SurfToGraph.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/s2graph/ngramgraphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/s2graph/ngramgraphs/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />

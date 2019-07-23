@@ -35,9 +35,9 @@ import java.util.List;
 
 /**
  * <h1>Produce Surface</h1>
- * Main class of application Produce Surface which creates a file with
+ * Main class of application Produce Surface, which creates a file with
  * a given number of real numbers considered as surface heights.
- * The resulting surface is either Gaussian isotropic or non-isotropic.
+ * <br>The resulting surface is either Gaussian isotropic or non-isotropic.
  */
 public class Main {
 

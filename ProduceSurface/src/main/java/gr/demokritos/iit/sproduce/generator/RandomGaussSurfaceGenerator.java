@@ -24,7 +24,7 @@ import java.math.RoundingMode;
 
 import edu.princeton.cs.algs4.Complex;
 
-import gr.demokritos.iit.sproduce.utils.FFT_2D;
+import gr.demokritos.iit.sproduce.utils.FastFourier;
 import gr.demokritos.iit.sproduce.utils.Linspace;
 
 
@@ -66,7 +66,7 @@ public class RandomGaussSurfaceGenerator {
          * Fourier transform and normalizing prefactors
          */
 
-        FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
+        FastFourier fft2 = new FastFourier(N,N); // NxM matrix Fourier Transform
 
         // implementing ifft2(fft2(GF).*fft2(RRS)
         Complex[][] GF_cox = fft2.double2Complex(GF);
@@ -109,7 +109,7 @@ public class RandomGaussSurfaceGenerator {
          * Fourier transform and normalizing prefactors
          */
 
-        FFT_2D fft2 = new FFT_2D(N,N); // NxM matrix Fourier Transform
+        FastFourier fft2 = new FastFourier(N,N); // NxM matrix Fourier Transform
 
         // implementing ifft2(fft2(GF).*fft2(RRS)
         Complex[][] GF_cox = fft2.double2Complex(GF);

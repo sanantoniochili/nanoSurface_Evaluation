@@ -14,13 +14,13 @@ import edu.princeton.cs.algs4.Complex;
 import edu.princeton.cs.algs4.StdOut;
 
 
-public class FFT_2D {
+public class FastFourier {
 
     FFT fft_inst;
     protected int N;
     protected int M;
 
-    public FFT_2D(int dim1, int dim2) {
+    public FastFourier(int dim1, int dim2) {
         this.N = dim1;
         this.M = dim2;
     }
