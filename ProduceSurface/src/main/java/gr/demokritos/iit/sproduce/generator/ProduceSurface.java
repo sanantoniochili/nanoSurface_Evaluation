@@ -34,13 +34,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <h1>Produce Surface</h1>
- * Main class of application Produce Surface, which creates a file with
- * a given number of real numbers considered as surface heights.
- * <br>The resulting surface is either Gaussian isotropic or non-isotropic.
+ * <p>Application which creates a file with a list of real numbers
+ * considered as surface heights. The resulting surface is either
+ * Gaussian isotropic or non-isotropic.
+ * <br>The concept of this application is to simulate the production
+ * of a square piece of material with characteristics
+ * visible on the nano scale.</p>
+ *
+ * <p>Each side has a certain length (<i>-rL</i>)
+ * and consists of a number <i>(-N)</i> of points to be provided.
+ * Rms height (<i>-h</i>) and correlation length on x axis (<i>-clx</i>) are also needed.
+ * The provision of correlation length on y axis (<i>-cly</i>) determinates
+ * whether the surface would be isotropic or non-isotropic.</p>
+ * Input is passed either through an input file (<i>-in</i>), which may contain multiple surfaces'
+ * parameters, or through standard input for one surface at a time.
+ * Output can be forwarded through file (<i>-out</i>), or standard output, in which case
+ * a 3D image is produced.
+ *
+ * @author  Antonia Tsili
+ * @version 1.0
+ * @since   2018-08
  */
-public class Main {
+public class ProduceSurface {
 
+    /**
+     * @param argv          N,input_file or (length,rms_height,clx,cly*),output_file*
+     * @throws Exception    Related to input parameters
+     *
+     * <p><i>Asterisk (*) denotes optional argument.</i>
+     * <br><i>Input file(.cvs) format:
+     * <ul>
+     * <li>",Rms,clx,cly,Skewness,Kurtosis,Area" as a header</li>
+     * <li>ID,Rms,clx,cly,Skewness,Kurtosis,Area per line</li>
+     * </ul>
+     * </i></p>
+     */
     public static void main(String[] argv) throws Exception{
 
         Options options = new Options();
@@ -186,6 +214,19 @@ public class Main {
 
     }
 
+    /**
+     * <p>This function creates a surface generator instance,
+     * which is loaded with all the needed and provided parameters.
+     * <br>The resulting surface is a member of the generator class.</p>
+     *
+     * @param args_         Parameters read from input
+     * @param y_flag        Determines whether surface will be (non-)isotropic
+     * @param out_flag      Determines whether output will be printed to file
+     * @param out_filename  Name of output file
+     * @return              Instance of surface generator
+     * @throws ImError      If Fourier transformation did not succeed
+     * @throws IOException  If there was an error creating or writing to file
+     */
     static protected RandomGaussSurfaceGenerator produce(double[] args_, int y_flag, int out_flag, String out_filename) throws ImError, IOException {
         RandomGaussSurfaceGenerator RG;
         if( y_flag==0 )
@@ -207,6 +248,16 @@ public class Main {
         return RG;
     }
 
+    /**
+     * <p>Used only with input provided through standard input for one surface at a time.
+     * <br>The function creates a 3D image with gradient colours which show height differences.
+     * <br>It provokes a pop-up window with the correspondent figure, that can also be
+     * turned at will using the cursor. The produced image is saved as a file.</p>
+     *
+     * @param RG            Instance of surface generator class
+     * @throws IOException
+     * @see org.jzy3d.chart
+     */
     static protected void plot_surface(RandomGaussSurfaceGenerator RG) throws IOException {
         double[][] distDataProp = RG.Surf;
 
@@ -228,7 +279,7 @@ public class Main {
         surface.setColorMapper(new ColorMapper(new ColorMapRainbow(), surface.getBounds().getZmin(), surface.getBounds().getZmax(), new org.jzy3d.colors.Color(1,1,1,1f)));
         surface.setWireframeDisplayed(false);
 
-        Chart chart = new AWTChartComponentFactory().newChart(Quality.Advanced, "awt");;
+        Chart chart = new AWTChartComponentFactory().newChart(Quality.Advanced, "awt");
         chart.getScene().getGraph().add(surface);
         ChartLauncher.openChart(chart);
         File image = new File("surface.png");

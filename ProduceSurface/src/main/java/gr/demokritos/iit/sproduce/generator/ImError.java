@@ -16,6 +16,9 @@
 
 package gr.demokritos.iit.sproduce.generator;
 
+/**
+ * If Fourier transformation did not succeed
+ */
 public class ImError extends Exception {
 
     public String getMessage() {

@@ -28,14 +28,15 @@ import gr.demokritos.iit.sproduce.utils.FastFourier;
 import gr.demokritos.iit.sproduce.utils.Linspace;
 
 
+/**
+ * <p>This class generates a square 2-dimensional random rough surface f(x,y) with NxN
+ * surface points. The surface has a Gaussian height distribution and
+ * exponential autocovariance functions (in both x and y), where rL is the
+ * length of the surface side, h is the RMS height and clx and cly are the
+ * correlation lengths in x and y. Omitting cly makes the surface isotropic.</p>
+ *
+ */
 public class RandomGaussSurfaceGenerator {
-    /*
-     * generates a square 2-dimensional random rough surface f(x,y) with NxN
-     * surface points. The surface has a Gaussian height distribution and
-     * exponential autocovariance functions (in both x and y), where rL is the
-     * length of the surface side, h is the RMS height and clx and cly are the
-     * correlation lengths in x and y. Omitting cly makes the surface isotropic.
-     */
 
     Integer N;  // number of surface points (along square side)
     double rL;  // length of surface (along square side)
@@ -49,7 +50,13 @@ public class RandomGaussSurfaceGenerator {
 
     public double[][] Surf;    //height results
 
-    // non-isotropic surface
+    /**
+     * <p>For a non-isotropic surface</p>
+     *
+     * @param args      Passed from input
+     * @param cly       Correlation length in y
+     * @throws ImError  If Fourier transformation did not succeed
+     */
     RandomGaussSurfaceGenerator(double[] args, double cly) throws ImError{
         this.N   = (int)args[0];
         this.rL  = args[1];
@@ -92,7 +99,13 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    // isotropic surface
+
+    /**
+     * <p>For an isotropic surface</p>
+     *
+     * @param args      Passed from input
+     * @throws ImError  If Fourier transformation did not succeed
+     */
     RandomGaussSurfaceGenerator(double[] args) throws ImError{
         this.N   = (int)args[0];
         this.rL  = args[1];
@@ -135,11 +148,13 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    /*
-     * create matrices X,Y of absolute values where
-     * X: same vector in each row
-     * Y: same vector in each column
-     * of evenly spaced points between -rL/2 and rL/2
+    /**
+     * <p>Function to create matrices X,Y of absolute values where
+     * <ul>
+     * <li>X: same vector in each row</li>
+     * <li>Y: same vector in each column</li>
+     * </ul>
+     * <br>of evenly spaced points between -rL/2 and rL/2</p>
      */
     protected void meshGrid() {
         double begin = -rL/2;
@@ -164,9 +179,11 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    /*
-     * Create matrix NxN of random normal distributed values
-     * multiplied by h (rms height)
+    /**
+     *
+     * <p>Create matrix NxN of random normal distributed values
+     * multiplied by h (rms height)</p>
+     *
      */
     protected void RandomSurfaceH() {
         RandomRoughSurf = new double[N][N];
@@ -179,11 +196,11 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    /*
-     * Compute the Gaussian filter
-     * of non-isotropic
+    /**
+     * <p>Compute the Gaussian filter
+     * of non-isotropic</p>
      *
-     * F is size N*N
+     * <p>F is size N*N</p>
      */
     protected double[][] GaussianFilter(double arg) {
         double[][] F = new double[N][N];
@@ -196,11 +213,11 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
-    /*
-     * Compute the Gaussian filter
-     * of isotropic
+    /**
+     * <p>Compute the Gaussian filter
+     * of isotropic</p>
      *
-     * F is size N*N
+     * <p>F is size N*N</p>
      */
     protected double[][] GaussianFilter() {
         double[][] F = new double[N][N];
@@ -213,6 +230,14 @@ public class RandomGaussSurfaceGenerator {
 
     }
 
+    /**
+     * <p>Print results to file</p>
+     *
+     * @param writer        Writer class
+     * @param X             Array of height values
+     * @throws IOException
+     * @see                 java.io.FileWriter
+     */
     void printArray(FileWriter writer, double[][] X) throws IOException { // one surface per line, height per column
         StringBuilder sb = new StringBuilder();
         sb.append("rms:").append(String.valueOf((this.H))); // printing parameters in first column as: <param_name>:<param_value>
@@ -234,6 +259,13 @@ public class RandomGaussSurfaceGenerator {
         writer.close();
     }
 
+    /**
+     * <p>Print results to standard output</p>
+     *
+     * @param X             Array of height values
+     * @throws IOException
+     * @see                 java.io.FileWriter
+     */
     void printArray(double[][] X) throws IOException { // one line of surface per line of output
         System.out.println("rms:"+this.H+" clx:"+this.clx+" cly:"+this.cly+" N:"+this.N);
         for (int i=0 ; i<N ; i++) {
@@ -250,8 +282,9 @@ public class RandomGaussSurfaceGenerator {
     }
 
 
-    /*
-     * round double value to n decimals
+    /**
+     * <p>Round double value to n decimals</p>
+     * 
      */
     protected static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
