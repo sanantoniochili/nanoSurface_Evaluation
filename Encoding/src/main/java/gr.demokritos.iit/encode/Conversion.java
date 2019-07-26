@@ -31,7 +31,7 @@ import java.util.Scanner;
 
 import gr.demokritos.iit.loadinput.CSVRead;
 
-public class Main {
+public class Conversion {
     static int SpacesNo = 1;
     static int Scale = 0;
 

@@ -284,7 +284,7 @@ public class RandomGaussSurfaceGenerator {
 
     /**
      * <p>Round double value to n decimals</p>
-     * 
+     *
      */
     protected static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();

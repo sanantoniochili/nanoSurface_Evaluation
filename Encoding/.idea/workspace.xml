@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f05f7f5-91f6-4be5-a978-d58107f3d507" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/ImError.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/ImError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/generator/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/FastFourier.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/FastFourier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/Linspace.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/Linspace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/gr/demokritos/iit/sproduce/utils/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/javadoc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ImError.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ImError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,9 +32,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="1440">
               <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -200,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java" />
       </list>
     </option>
   </component>
@@ -328,7 +291,7 @@
   </component>
   <component name="RunManager">
     <configuration name="EncodingSimple" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.encode.Main" />
+      <option name="MAIN_CLASS_NAME" value="gr.demokritos.iit.encode.Conversion" />
       <module name="Encoding" />
       <option name="PROGRAM_PARAMETERS" value="-in surface512_50_8_8.csv -z 20 -scale 3 -method 1 -out ensurface512_50_8_8_scaletest.txt" />
       <method v="2">
@@ -351,9 +314,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17044826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17044826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -463,9 +425,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="1440">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
