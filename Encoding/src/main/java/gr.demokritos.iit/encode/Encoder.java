@@ -28,16 +28,16 @@ import gr.demokritos.iit.utils.ContinuousSplitBT;
 import gr.demokritos.iit.utils.TwoDirectSplitBT;
 import gr.demokritos.iit.utils.Linspace;
 
+/**
+ *
+ * <p>Class that includes implementation of various methods of text encoding.
+ * <br>Its purpose is to transform a file of surface heights to texts
+ * using a particular pattern of symbols.
+ * Each text is matched to one area of (nano-)surface.</p>
+ *
+ */
 abstract class Encoder {
     // surface
-    /**
-     *
-     * <p>Class that includes implementation of various methods of text encoding.
-     * <br>Its purpose is to transform a file of surface heights to texts
-     * using a particular pattern of symbols.
-     * Each text is matched to one area of (nano-)surface.</p>
-     *
-     */
     Surface S;
     // each pair contains the point's index (number/position) and the matched character
     Vector<Pair<Integer,Character>> Text;
@@ -134,7 +134,15 @@ abstract class Encoder {
     }
 }
 
+/**
+ * This simple method of encoding splits the range of [-100nm, 100nm]
+ * to a given even number of spaces and matches a latin letter from [A,T]&cup;[a,t] to each one of them.
+ *
+ * @param spacesNo  Number of spaces to split into
+ * @param surface   The surface instance whose heights are to to convert
+ */
 class SimpleEncoder extends Encoder {
+
     SimpleEncoder(int spacesNo, Surface surface) {
         super(spacesNo,surface);
         Linspace lin = new Linspace(-100,100,spacesNo+1);

@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f05f7f5-91f6-4be5-a978-d58107f3d507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javadoc/gr/demokritos/iit/utils/Linspace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Encoding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr.demokritos.iit/utils/Linspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/ImError.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/ImError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,93 +99,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Encoding</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>java-11-openjdk-amd64</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

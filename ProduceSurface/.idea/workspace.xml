@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="299b6952-d8ae-4e71-b58a-7e1a8bdbc22f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Encoding/javadoc/gr/demokritos/iit/utils/Linspace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/Encoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/Encoding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/Linspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/Linspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/ImError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/ImError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gr/demokritos/iit/sproduce/generator/RandomGaussSurfaceGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SurfToGraph/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
