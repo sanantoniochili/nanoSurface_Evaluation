@@ -15,12 +15,6 @@
 */
 
 package gr.demokritos.iit.encode;
-/*
- * Assuming that most heights vary between -100 and 100 nm among nanostructured surfaces.
- * Splitting space [-100nm,100nm] to even subspaces and  labelling them with Latin letters.
- */
-
-//import gr.demokritos.ssimple.input_load.CSVRead;
 
 import org.apache.commons.cli.*;
 
@@ -31,10 +25,42 @@ import java.util.Scanner;
 
 import gr.demokritos.iit.loadinput.CSVRead;
 
+/**
+ *
+ * <p>Application which performs the conversion of a file of numbers
+ * to a file of text using a particular given method (<i>-m</i>) of encoding.
+ * The input (<i>-in</i>) and output (<i>-out</i>) files have particular format.</p>
+ *
+ * <p>Assuming that most heights vary between -100 and 100 nm among nanostructured surfaces.
+ * <br>Splitting space [-100nm,100nm] to a number of even subspaces (<i>-z</i>) and  labelling them with Latin letters.
+ * <br>Numbers are thought to measure nanometres*10^Scale (<i>-s</i>)"</p>
+ *
+ * @author  Antonia Tsili
+ * @version 1.0
+ * @since   2018-08
+ *
+ */
 public class Conversion {
     static int SpacesNo = 1;
     static int Scale = 0;
 
+    /**
+     *
+     * @param argv input_file,number_of_spaces,scale,method_of_encoding,output_file*
+     * @throws IOException
+     *
+     * <p><i>Asterisk (*) denotes optional argument.</i>
+     * <br><i>Input file(.cvs) format:
+     * input file(.cvs) format: rms:,clx:&lt;value&gt;,cly:&lt;value&gt;,N:&lt;value&gt;,(&lt;height&gt;,)*&lt;height&gt; surface per line
+     *
+     * <ul>
+     *     <li>&lt;parameter&gt;:&lt;value&gt; for first column</li>
+     *     <li>height per column for rest of columns</li>
+     * </ul>
+     * </p>
+     *
+     * <p><i>Note: When using methods 4 or 6 (from "Encodings.pdf") it is discouraged to use flag -z with a value greater than 26</i></p>
+     */
     public static void main(String[] argv) throws IOException {
 
         String csvFile = "";

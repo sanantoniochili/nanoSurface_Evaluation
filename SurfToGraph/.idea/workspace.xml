@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbb77823-3bbf-453c-acb9-651a1a4d651b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Conversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/src/main/java/gr/demokritos/iit/sproduce/generator/ProduceSurface.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -102,7 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,6 +142,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -187,9 +190,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28666297" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2899834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

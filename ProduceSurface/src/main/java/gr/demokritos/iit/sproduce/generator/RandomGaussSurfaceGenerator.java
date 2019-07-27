@@ -236,7 +236,7 @@ public class RandomGaussSurfaceGenerator {
      * @param writer        Writer class
      * @param X             Array of height values
      * @throws IOException
-     * @see                 java.io.FileWriter
+     * @see  java.io.FileWriter
      */
     void printArray(FileWriter writer, double[][] X) throws IOException { // one surface per line, height per column
         StringBuilder sb = new StringBuilder();

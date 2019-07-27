@@ -26,10 +26,18 @@ import java.util.Vector;
 import gr.demokritos.iit.utils.BinaryTree;
 import gr.demokritos.iit.utils.ContinuousSplitBT;
 import gr.demokritos.iit.utils.TwoDirectSplitBT;
-import utils.Linspace;
+import gr.demokritos.iit.utils.Linspace;
 
 abstract class Encoder {
     // surface
+    /**
+     *
+     * <p>Class that includes implementation of various methods of text encoding.
+     * <br>Its purpose is to transform a file of surface heights to texts
+     * using a particular pattern of symbols.
+     * Each text is matched to one area of (nano-)surface.</p>
+     *
+     */
     Surface S;
     // each pair contains the point's index (number/position) and the matched character
     Vector<Pair<Integer,Character>> Text;
@@ -40,6 +48,11 @@ abstract class Encoder {
 
     Encoder(int spacesNo, Surface surface) {}
 
+    /**
+     * Secondary function to change surface member
+     *
+     * @param S Surface instance
+     */
     void changeSurface(Surface S) {
         this.S = S;
         this.Text.clear();
@@ -47,6 +60,9 @@ abstract class Encoder {
 
     void InText() {}
 
+    /**
+     * Function to produce output texts to standard output.
+     */
     void printText() {
         Iterator it = Text.iterator();
 
@@ -60,6 +76,13 @@ abstract class Encoder {
         System.out.println();
     }
 
+    /**
+     * Function to produce output texts to given output file.
+     *
+     * @param writer        File writer
+     * @throws IOException
+     * @see java.io.FileWriter
+     */
     void printText(FileWriter writer) throws IOException {
         StringBuilder sb = new StringBuilder();
         Iterator it = Text.iterator();
@@ -81,6 +104,10 @@ abstract class Encoder {
         writer.close();
     }
 
+    /**
+     * @param sFilename Load data string from file with this name
+     * @return          N Gram Graph instance
+     */
     DocumentNGramGraph toGraph(String sFilename) {
         DocumentNGramGraph dngGraph = new DocumentNGramGraph();
         // Load the data string from the file, also dealing with exceptions
@@ -93,8 +120,12 @@ abstract class Encoder {
         return dngGraph;
     }
 
+    /**
+     * Convert rms scale before changing heights
+     *
+     * @param Scale Nanometres*10^Scale
+     */
     void changeHeights(int Scale) {
-        // convert rms scale before changing heights
         this.S.distance_heights(this.S.rms*Math.pow(10,Scale));
     }
 

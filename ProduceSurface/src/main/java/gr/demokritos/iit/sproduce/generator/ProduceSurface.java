@@ -42,7 +42,7 @@ import java.util.List;
  * visible on the nano scale.</p>
  *
  * <p>Each side has a certain length (<i>-rL</i>)
- * and consists of a number <i>(-N)</i> of points to be provided.
+ * and consists of a number (<i>-N</i>) of points to be provided.
  * Rms height (<i>-h</i>) and correlation length on x axis (<i>-clx</i>) are also needed.
  * The provision of correlation length on y axis (<i>-cly</i>) determinates
  * whether the surface would be isotropic or non-isotropic.</p>
@@ -64,8 +64,8 @@ public class ProduceSurface {
      * <p><i>Asterisk (*) denotes optional argument.</i>
      * <br><i>Input file(.cvs) format:
      * <ul>
-     * <li>",Rms,clx,cly,Skewness,Kurtosis,Area" as a header</li>
-     * <li>ID,Rms,clx,cly,Skewness,Kurtosis,Area per line</li>
+     *      <li>",Rms,clx,cly,Skewness,Kurtosis,Area" as a header</li>
+     *      <li>ID,Rms,clx,cly,Skewness,Kurtosis,Area per line</li>
      * </ul>
      * </i></p>
      */
