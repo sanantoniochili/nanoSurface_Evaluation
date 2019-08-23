@@ -14,17 +14,41 @@ import edu.princeton.cs.algs4.Complex;
 import edu.princeton.cs.algs4.StdOut;
 
 
+/**
+ * Two dimensional Fast Fourier Transformation
+ */
 public class FastFourier {
 
+    /**
+     * Simple Fast Fourier Transform instance
+     */
     FFT fft_inst;
+    /**
+     * Dimension N
+     */
     protected int N;
+    /**
+     * Dimension M
+     */
     protected int M;
 
+    /**
+     * <p>Initialization</p>
+     *
+     * @param dim1
+     * @param dim2
+     */
     public FastFourier(int dim1, int dim2) {
         this.N = dim1;
         this.M = dim2;
     }
 
+    /**
+     * <p>Transform real to complex</p>
+     *
+     * @param in    Array of real numbers
+     * @return      Result
+     */
     public Complex[][] double2Complex(double[][] in) {
         Complex[][] X = new Complex[N][M];
         for (int i=0 ; i<N ; i++) {
@@ -36,6 +60,12 @@ public class FastFourier {
 
     }
 
+    /**
+     * <p>Two dimensional Fast Fourier Transformation</p>
+     *
+     * @param X_cox     Array of Complex numbers
+     * @return          Transformed matrix
+     */
     public Complex[][] FTransform(Complex[][] X_cox) {
         Complex[][] temp = new Complex[N][M]; // result of 1D FFT on each row of X
         Complex[][] res = new Complex[N][M];
@@ -57,6 +87,12 @@ public class FastFourier {
 
     }
 
+    /**
+     * <p>Two dimensional inverse Fast Fourier Transformation</p>
+     *
+     * @param X_cox     Array of Complex numbers
+     * @return          Transformed matrix
+     */
     public Complex[][] iFTransform(Complex[][] X_cox) {
         Complex[][] temp = new Complex[N][M]; // result of 1D iFFT on each row of X
         Complex[][] res = new Complex[N][M];
@@ -78,6 +114,14 @@ public class FastFourier {
 
     }
 
+    /**
+     * Matrix multiplication (implementing fft2(GF).*fft2(RRS)
+     *
+     * @param X     Complex 2 dim Matrix multiplier
+     * @param Y     Complex 2 dim Matrix multiplier
+     * @param Out   Result
+     * @return
+     */
     public boolean ComplexArray_mult(Complex[][] X, Complex[][] Y, Complex[][] Out) {
         if( X.length != Y.length )
             return false;

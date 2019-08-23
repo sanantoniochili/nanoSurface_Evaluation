@@ -38,17 +38,43 @@ import gr.demokritos.iit.sproduce.utils.Linspace;
  */
 public class RandomGaussSurfaceGenerator {
 
-    Integer N;  // number of surface points (along square side)
-    double rL;  // length of surface (along square side)
-    double H;   // rms height
-    double clx; // correlation length in x
-    double cly; // correlation length in y
+    /**
+     * Number of surface points (along square side)
+     */
+    Integer N;
+    /**
+     * Length of surface (along square side)
+     */
+    double rL;
+    /**
+     * RMS height
+     */
+    double H;
+    /**
+     * Correlation length x axis
+     */
+    double clx;
+    /**
+     * Correlation length y axis
+     */
+    double cly;
 
+    /**
+     * Heights in real numbers
+     */
     protected double[][] RandomRoughSurf;
+    /**
+     * All rows of same column with the same point (needed for transformation)
+     */
     protected double[][] meshGridX;
+    /**
+     * All columns of same row with the same point (needed for transformation)
+     */
     protected double[][] meshGridY;
-
-    public double[][] Surf;    //height results
+    /**
+     * Height results
+     */
+    public double[][] Surf;
 
     /**
      * <p>For a non-isotropic surface</p>
@@ -168,12 +194,12 @@ public class RandomGaussSurfaceGenerator {
 
         for (int j=0 ; j<N ; j++) {
             for (int i=0 ; i<N ; i++) {
-                meshGridX[i][j] = Math.abs(L[j]); //all rows of same column with the same point
+                meshGridX[i][j] = Math.abs(L[j]);
             }
         }
         for (int i=0 ; i<N ; i++) {
             for (int j=0 ; j<N ; j++) {
-                meshGridY[i][j] = Math.abs(L[i]); //all columns of same row with the same point
+                meshGridY[i][j] = Math.abs(L[i]);
             }
         }
 

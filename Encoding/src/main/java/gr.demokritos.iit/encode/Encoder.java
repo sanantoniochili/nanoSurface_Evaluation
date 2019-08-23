@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Vector;
 
-import gr.demokritos.iit.utils.BinaryTree;
+//import gr.demokritos.iit.utils.BinaryTree;
 import gr.demokritos.iit.utils.ContinuousSplitBT;
 import gr.demokritos.iit.utils.TwoDirectSplitBT;
 import gr.demokritos.iit.utils.Linspace;
@@ -37,19 +37,24 @@ import gr.demokritos.iit.utils.Linspace;
  *
  */
 abstract class Encoder {
-    // surface
+    /**
+     * Surface instance
+     */
     Surface S;
-    // each pair contains the point's index (number/position) and the matched character
+    /**
+     * Each pair contains the point's index (number/position) and the matched character
+     */
     Vector<Pair<Integer,Character>> Text;
-    // each pair matches a letter to space ( <lowest_pair_value>,<highest_pair_value> ] for positive
-    // or [ <lowest_pair_value>,<highest_pair_value> ) for negative
-    // zero is included in [ 0,<value> ]
+    /**
+     * Each pair matches a letter to space ( lowest_pair_value,highest_pair_value ] for positive
+     * or [ lowest_pair_value,highest_pair_value ) for negative numbers. Zero is included in [ 0,value ]
+     */
     Vector<Pair<Character,Double>> STable;
 
     Encoder(int spacesNo, Surface surface) {}
 
     /**
-     * Secondary function to change surface member
+     * <p>Secondary function to change surface member</p>
      *
      * @param S Surface instance
      */
@@ -58,10 +63,13 @@ abstract class Encoder {
         this.Text.clear();
     }
 
+    /**
+     * <p>Encode in text</p>
+     */
     void InText() {}
 
     /**
-     * Function to produce output texts to standard output.
+     * <p>Function to produce output texts to standard output</p>
      */
     void printText() {
         Iterator it = Text.iterator();
@@ -77,7 +85,7 @@ abstract class Encoder {
     }
 
     /**
-     * Function to produce output texts to given output file.
+     * <p>Function to produce output texts to given output file</p>
      *
      * @param writer        File writer
      * @throws IOException
@@ -121,7 +129,7 @@ abstract class Encoder {
     }
 
     /**
-     * Convert rms scale before changing heights
+     * <p>Convert rms scale before changing heights</p>
      *
      * @param Scale Nanometres*10^Scale
      */
@@ -129,20 +137,22 @@ abstract class Encoder {
         this.S.distance_heights(this.S.rms*Math.pow(10,Scale));
     }
 
-    void printHeights() {
-        this.S.print_heights();
-    }
+//    void printHeights() {
+//        this.S.print_heights();
+//    }
 }
 
 /**
- * This simple method of encoding splits the range of [-100nm, 100nm]
- * to a given even number of spaces and matches a latin letter from [A,T]&cup;[a,t] to each one of them.
+ * <p>This simple method of encoding splits the range of [-100nm, 100nm]
+ * to a given even number of spaces and matches a latin letter from [A,T]&cup;[a,t] to each one of them</p>
  *
- * @param spacesNo  Number of spaces to split into
- * @param surface   The surface instance whose heights are to to convert
  */
 class SimpleEncoder extends Encoder {
 
+    /**
+     * @param spacesNo  Number of spaces to split into
+     * @param surface   The surface instance whose heights are to to convert
+     */
     SimpleEncoder(int spacesNo, Surface surface) {
         super(spacesNo,surface);
         Linspace lin = new Linspace(-100,100,spacesNo+1);
@@ -176,6 +186,10 @@ class SimpleEncoder extends Encoder {
         Text = new Vector<>(S.TotalElementNo); // we have to build this
 
     }
+
+    /**
+     * <p>Building a tree out of pairs with characters and corresponding range boundaries</p>
+     */
     void InText() {
         // building a tree out of pairs <Character,BoundOfSpace>
         TwoDirectSplitBT tree = new TwoDirectSplitBT();
@@ -194,8 +208,19 @@ class SimpleEncoder extends Encoder {
     }
 }
 
+/**
+ *
+ * <p>This type of Surface class carries the corresponding heights in sorted order.</p>
+ *
+ */
 class MinMaxSurf extends Surface {
+    /**
+     * Minimum height of vector of pairs
+     */
     double minH;
+    /**
+     * Max height of vector of pairs
+     */
     double maxH;
 
     MinMaxSurf(Surface S) {
@@ -207,7 +232,10 @@ class MinMaxSurf extends Surface {
     }
 }
 
-
+/**
+ * <p>This method of encoding splits the range of [-100nm, 100nm]
+ * to a given even number of spaces and matches a latin letter from [A,T]&cup;[a,t] to each one of them</p>
+ */
 class MinMaxEncoder extends Encoder {
     MinMaxSurf SortedSurf;
     int AvgElementNo; // average number of points of surface per zone

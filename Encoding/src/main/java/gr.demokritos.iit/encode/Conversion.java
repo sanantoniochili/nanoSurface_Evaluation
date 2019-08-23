@@ -42,7 +42,13 @@ import gr.demokritos.iit.loadinput.CSVRead;
  */
 public class Conversion {
 
+    /**
+     * Number of spaces to split range of heights into
+     */
     static int SpacesNo = 1;
+    /**
+     * Relation to nanometres
+     */
     static int Scale = 0;
 
     /**

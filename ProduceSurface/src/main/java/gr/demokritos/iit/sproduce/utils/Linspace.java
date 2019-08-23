@@ -14,23 +14,37 @@
  * limitations under the License.
  */
 
-/*
- * Generates n points
- * The spacing between the points is (arg2-arg1)/(n-1).
- */
-
 package gr.demokritos.iit.sproduce.utils;
 
 import java.lang.Math;
 import java.math.BigDecimal;
 
 
+/**
+ * <p>Generates n points. The spacing between the points is (arg2-arg1)/(n-1).</p>
+ */
 public class Linspace {
 
+    /**
+     * Number of points
+     */
     private int total;
+    /**
+     * End of spacing
+     */
     private final double end;
+    /**
+     * Start of spacing
+     */
     private final double start;
 
+    /**
+     * <p>Initialization</p>
+     *
+     * @param start         Start of total spacing
+     * @param end           End of total spacing
+     * @param totalCount    Number of points
+     */
     public Linspace(double start, double end, int totalCount) {
         this.total   = (int)Math.floor( (double)totalCount )-1;
         if( start>end ){ // check for wrong sequence of arguments
@@ -43,6 +57,11 @@ public class Linspace {
 
     }
 
+    /**
+     * <p>Operation</p>
+     *
+     * @return Array of real numbers as points
+     */
     public double[] op() {
         // check intermediate value for appropriate treatment
         // throws exception at overflow
