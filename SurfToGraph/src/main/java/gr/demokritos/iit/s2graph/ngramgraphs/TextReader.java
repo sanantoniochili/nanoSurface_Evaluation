@@ -75,6 +75,8 @@ public class TextReader {
     }
 
     /**
+     * <p>Get surface parameters</p>
+     *
      * @return          Surface parameters
      */
     public String[] getParams() {
