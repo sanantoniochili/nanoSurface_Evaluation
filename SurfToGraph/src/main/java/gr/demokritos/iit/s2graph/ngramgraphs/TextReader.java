@@ -2,22 +2,44 @@ package gr.demokritos.iit.s2graph.ngramgraphs;
 
 import java.io.*;
 
+/**
+ * Reads the text that is produced by surface encoding.
+ * <br>Each surface is represented as text and its title is the parameters that characterize the surface.
+ */
 public class TextReader {
 
+    /**
+     * Input file
+     */
     RandomAccessFile raf;
+    /**
+     * Surface parameters
+     */
     String[] params;
+    /**
+     * File pointer
+     */
     long fp;
 
+    /**
+     * <p>Initialization</p>
+     *
+     * @param filename          Name of input file
+     * @throws FileNotFoundException
+     */
     public TextReader(String filename) throws FileNotFoundException {
         raf = new RandomAccessFile(filename, "r");
         fp = 0;
     }
 
+    /**
+     * <p>Reads each surface-text per call. Sets file pointer at the end of token text. Returns null if EOF reached</p>
+     *
+     * @return              String describing surface
+     * @throws IOException
+     */
     // new to include parameters
     public String SurfToString() throws IOException {
-        // reading each surface-text per call
-        // setting file pointer at the end of token text
-        // returns null if EOF reached
         if( fp==-1 ) return null;
         raf.seek(fp);
 
@@ -52,6 +74,9 @@ public class TextReader {
         else return str;
     }
 
+    /**
+     * @return          Surface parameters
+     */
     public String[] getParams() {
         return params;
     }

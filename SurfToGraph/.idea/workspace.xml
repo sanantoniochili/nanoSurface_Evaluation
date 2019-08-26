@@ -50,15 +50,12 @@
       <change beforePath="$PROJECT_DIR$/../Encoding/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/javadoc/overview-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/javadoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/javadoc/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Encoding/javadoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/javadoc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Surface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/encode/Surface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/loadinput/CSVRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/ContinuousSplitBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/Linspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/Linspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encoding/src/main/java/gr.demokritos.iit/utils/TwoDirectSplitBT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProduceSurface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/JGraphTWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/TextReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,17 +139,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gr/demokritos/iit/s2graph/ngramgraphs/Main.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

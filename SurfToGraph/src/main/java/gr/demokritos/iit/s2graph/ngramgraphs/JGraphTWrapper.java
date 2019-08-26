@@ -37,19 +37,49 @@ import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 
+/**
+ * This class is needed in order to translate OpenJGraph to JGraphT graph.
+ * <br>The former is transformed into DOT string and eventually is read into the needed kind of graph.
+ */
 public class JGraphTWrapper {
 
+    /**
+     * Directed graph
+     */
     Graph digraph;
+    /**
+     * Simple graph
+     */
     Graph graph;
+    /**
+     * Surface Parameters
+     */
     String[] params;
+    /**
+     * Surface encoded text
+     */
     Vector<Pair<String,Double>> vector;
     int paramNo;
 
+    /**
+     * <p>Initialization of class object<p>
+     *
+     * @param params        Parameters of surface
+     */
     public JGraphTWrapper(String[] params) {
         this.paramNo = params.length/2;
         this.params = params;
     }
 
+    /**
+     * <p>Convert DOT string to JGraphT object</p>
+     *
+     * @param digraph           Directed graph
+     * @param graph             Simple graph
+     * @return                  JGraphT result
+     * @throws ImportException
+     * @throws IOException
+     */
     public Graph<String, DefaultEdge> convertString(String digraph, String graph) throws ImportException, IOException {
         // convert DOT string to JGraphT object
         VertexProvider<String> vp = (label, attrs) -> label;
@@ -87,6 +117,12 @@ if( jgraph.vertexSet().size() > 1000 )
         return jgraph;
     }
 
+    /**
+     * <p>After the creation of graph, we extract a vector of its characteristics,
+     * describing it through basic Graph Theory concepts</p>
+     *
+     * @return      Characteristics' vector
+     */
     public Vector<Pair<String,Double>> vectorExtract() {
 
         Vector<Pair<String,Double>> vector = new Vector<>(6+paramNo);
@@ -109,6 +145,9 @@ if( jgraph.vertexSet().size() > 1000 )
         return vector;
     }
 
+    /**
+     * @return      Average length of shortest paths
+     */
     Double avgPath() {
         FloydWarshallShortestPaths fw = new FloydWarshallShortestPaths(this.digraph);
 
@@ -134,6 +173,9 @@ if( jgraph.vertexSet().size() > 1000 )
         return AvgLength;
     }
 
+    /**
+     * @return      Average degree of the graph's nodes
+     */
     Double avgDegree() {
 
         Double AvgD = 0.0; // avg sum of degrees
@@ -145,6 +187,9 @@ if( jgraph.vertexSet().size() > 1000 )
         return AvgD;
     }
 
+    /**
+     * @return      Number of cliques found in the graph
+     */
     int cliques() {
         // find cliques on simple graph
         PivotBronKerboschCliqueFinder<Object, DefaultEdge> cf = new PivotBronKerboschCliqueFinder<>(graph,60, TimeUnit.SECONDS);
@@ -159,12 +204,21 @@ if( jgraph.vertexSet().size() > 1000 )
         return i;
     }
 
+    /**
+     * @return      Number of blocks found in graph
+     */
     int Blocks() {
         BlockCutpointGraph BC = new BlockCutpointGraph(graph);
 
         return BC.getBlocks().size();
     }
 
+    /**
+     * <p>Printing characteristics' names to file</p>
+     *
+     * @param writer        Object that writes to the resulting file
+     * @throws IOException
+     */
     void printVNames(FileWriter writer) throws IOException {
         StringBuilder sb = new StringBuilder();
 
@@ -178,6 +232,11 @@ if( jgraph.vertexSet().size() > 1000 )
         writer.close();
     }
 
+    /**
+     * <p>Printing characteristics' vector to standard output</p>
+     *
+     * @throws IOException
+     */
     void printVNames() throws IOException {
         for (int i=0; i<vector.size(); i++) {
             Pair<String,Double> p = vector.get(i);
@@ -187,6 +246,12 @@ if( jgraph.vertexSet().size() > 1000 )
         System.out.println();
     }
 
+    /**
+     * <p>Printing characteristics' vector to file</p>
+     *
+     * @param writer        Object that writes to the resulting file
+     * @throws IOException
+     */
     void printVector(FileWriter writer) throws IOException {
         StringBuilder sb = new StringBuilder();
 
@@ -200,6 +265,11 @@ if( jgraph.vertexSet().size() > 1000 )
         writer.close();
     }
 
+    /**
+     * <p>Printing characteristics' vector to standard output</p>
+     *
+     * @throws IOException
+     */
     void printVector() throws IOException {
         for (int i=0; i<vector.size(); i++) {
             Pair<String,Double> p = vector.get(i);

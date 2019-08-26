@@ -26,7 +26,15 @@ import org.jgrapht.io.ImportException;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Main class of project. Creates the graphs, converts to right type of graph and prints output.
+ */
 public class Main {
+    /**
+     * @param argv          Arguments of programme
+     * @throws IOException
+     * @throws ImportException
+     */
     public static void main(String[] argv) throws IOException, ImportException {
 
         String in_filename = "";
