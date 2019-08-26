@@ -19,11 +19,22 @@ package gr.demokritos.iit.utils;
 import javafx.util.Pair;
 import java.util.Vector;
 
-// A binary tree node
+/**
+ * A binary tree node
+ */
 class Node {
+    /**
+     * Range boundary matched to alphabetical character
+     */
     Pair<Character,Double> Space;
     Node left, right, parent;
 
+    /**
+     * <p>Initialization of tree node</p>
+     *
+     * @param p         Match of boundary to character
+     * @param parent    Parent of tree element
+     */
     Node(Pair<Character,Double> p, Node parent) {
         Space = p;
         this.parent = parent;
@@ -31,11 +42,24 @@ class Node {
     }
 }
 
+/**
+ * <p>A binary tree that distributes the divided spacings and serves for matching the height to a ]n alphabetical character </p>
+ */
 public abstract class BinaryTree {
+    /**
+     * Root of binary tree with ranges
+     */
     static Node root;
 
-    /* A function that constructs Balanced Binary Search Tree
-     from a sorted array */
+    /**
+     * <p>A function that constructs Balanced Binary Search Tree from a sorted array</p>
+     *
+     * @param V         Vector of matches between heights and alphabetical characters
+     * @param start     Element id
+     * @param end       Element id
+     * @param parent    Parent node on Balanced Binary Tree
+     * @return          Return median as root of tree
+     */
     public Node sortedArrayToBST(Vector<Pair<Character, Double>> V, int start, int end, Node parent) {
 
         /* Base Case */
@@ -58,12 +82,20 @@ public abstract class BinaryTree {
         return node;
     }
 
-    // initialize with result of previous function
+    /**
+     * <p>Initialize with result of constructing function</p>
+     *
+     * @param root
+     */
     public void init(Node root) {
         this.root = root;
     }
 
-    /* A utility function to print preorder traversal of BST */
+    /**
+     * <p>A utility function to print preorder traversal of BST</p>
+     *
+     * @param node          Node of tree
+     */
     void preOrder(Node node) {
         if (node == null) {
             return;
@@ -73,5 +105,11 @@ public abstract class BinaryTree {
         preOrder(node.right);
     }
 
+    /**
+     * <p>Match height to character</p>
+     *
+     * @param height        Height value
+     * @return              Corresponding character
+     */
     public Character search(Double height) { return null; }
 }

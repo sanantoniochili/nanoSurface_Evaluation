@@ -25,12 +25,23 @@ import java.lang.Math;
 import java.math.BigDecimal;
 
 
+/**
+ * <p>Class that is used for linspace production in [<i>start</i>,<i>end</i>].
+ * <br>The result is a number of points that are separated by same lengthed spacings.</p>
+ */
 public class Linspace { // generates <total> points in [start,end]
 
     private int total;
     private final double end;
     private final double start;
 
+    /**
+     * <p>Initialization</p>
+     *
+     * @param start         Start point of space
+     * @param end           End point of space
+     * @param totalCount    Total points to be produced
+     */
     public Linspace(double start, double end, int totalCount) {
         this.total   = (int)Math.floor( (double)totalCount )-1;
         if( start>end ){ // check for wrong sequence of arguments
@@ -43,9 +54,12 @@ public class Linspace { // generates <total> points in [start,end]
 
     }
 
+    /**
+     * <p>Divide given space into same length smaller spaces of defined number</p>
+     *
+     * @return      Result of linspace operation
+     */
     public double[] op() {
-        // check intermediate value for appropriate treatment
-        // throws exception at overflow
         try{
             BigDecimal.valueOf(Math.multiplyExact((long)(end-start),(long)total-1));
             double[] res = new double[total+1];

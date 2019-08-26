@@ -27,10 +27,22 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
 
+/**
+ * Get surface input from csv file
+ */
 public class CSVRead {
 
+    /**
+     * Sum of surfaces
+     */
     public Vector<Surface> SurfTable;
 
+    /**
+     * <p>Read input file</p>
+     *
+     * @param csvFile       Name of file
+     * @param Scale         Choose numbers' relation to nanometres
+     */
     public CSVRead(String csvFile, int Scale) {
         String line = "";
         String csvSplit1 = ",";

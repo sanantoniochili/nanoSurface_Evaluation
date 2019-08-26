@@ -233,22 +233,38 @@ class MinMaxSurf extends Surface {
 }
 
 /**
- * <p>This method of encoding splits the range of [-100nm, 100nm]
- * to a given even number of spaces and matches a latin letter from [A,T]&cup;[a,t] to each one of them</p>
+ * <p>Encoder Class which holds a field of height-sorted surface
+ * and a field for splitting the height range in accordance to same sized groups of points</p>
  */
 class MinMaxEncoder extends Encoder {
+    /**
+     * Instance of MinMaxSurf with sorted heights
+     */
     MinMaxSurf SortedSurf;
-    int AvgElementNo; // average number of points of surface per zone
-    int Remain;       // remaining number of points
+    /**
+     * Average number of points of surface per zone
+     */
+    int AvgElementNo;
+    /**
+     * Remaining number of points
+     */
+    int Remain;
+    /**
+     * After splitting the range into zones, we keep track of each zone's boundaries
+     */
     double[] bounds;
 
+    /**
+     * <p>At first, this function creates structure of zones' boundaries beginning from minH and maxH.
+     * <br>After that, it splits spaces by counting the height elements of the surface.
+     * Each boundary is the mean value of space [<i>last_zone_height</i>,<i>next_height</i>] and next existing height </p>
+     *
+     * @param spacesNo      Number of spaces to split [minH,maxH] into
+     * @param S             Instance of class Surface
+     */
     MinMaxEncoder(int spacesNo, Surface S) {
         super(spacesNo,S);
 
-        /*
-         * SpaceNo: number of spaces to split [minH,maxH] into
-         * S: Object of class Surface
-         */
         AvgElementNo = S.get_totalNo() / spacesNo; // initialize average size of space
         Remain = S.get_totalNo() % spacesNo;
         SortedSurf = new MinMaxSurf(S);
@@ -301,6 +317,9 @@ class MinMaxEncoder extends Encoder {
 
     }
 
+    /**
+     * <p>Building a tree out of pairs (<i>Character</i>,<i>BoundOfSpace</i>), then creating character array</p>
+     */
     void InText() {
         // building a tree out of pairs <Character,BoundOfSpace>
         ContinuousSplitBT tree = new ContinuousSplitBT();
@@ -319,10 +338,25 @@ class MinMaxEncoder extends Encoder {
     }
 }
 
+/**
+ *
+ * <p>This type of Surface class carries the absolute difference of each height from the rms height in sorted order.</p>
+ *
+ */
 class MinMaxRMS extends Surface {
+    /**
+     * Minimum absolute difference in vector of pairs
+     */
     double minR;
+    /**
+     * Maximum absolute difference in vector of pairs
+     */
     double maxR;
 
+    /**
+     * Initialization
+     * @param S     Surface instance
+     */
     MinMaxRMS(Surface S) {
         super(S);
         sort_heights(); // sort dr = abs(height - rms) distances
@@ -332,19 +366,39 @@ class MinMaxRMS extends Surface {
     }
 }
 
+/**
+ * <p>Encoder Class which holds a field of surface with sorted rms-normalized heights
+ * and a field for splitting the height range in accordance to same sized groups of points</p>
+ */
 class MinMaxRMSEncoder extends Encoder {
+    /**
+     * Surface with rms-normalized heights
+     */
     MinMaxRMS SortedSurf;
-    int AvgElementNo; // average number of points of surface per zone
-    int Remain;       // remaining number of points
+    /**
+     * Average number of points of surface per zone
+     */
+    int AvgElementNo;
+    /**
+     * Remaining number of points
+     */
+    int Remain;
+    /**
+     * After splitting the range into zones, we keep track of each zone's boundaries
+     */
     double[] bounds;
 
+    /**
+     * <p>At first, this function creates structure of zones' boundaries beginning from minR and maxR.
+     * <br>After that, it splits spaces by counting the rms-normalized heights.
+     * Each boundary is the mean value of space [<i>last_zone_value</i>,<i>next_value</i>] and next existing value </p>
+     *
+     * @param spacesNo      Number of spaces to split [minR,maxR] into
+     * @param S             Instance of class Surface
+     */
     MinMaxRMSEncoder(int spacesNo, Surface S) {
         super(spacesNo,S);
 
-        /*
-         * SpaceNo: number of spaces to split [minH,maxH] into
-         * S: Object of class Surface
-         */
         AvgElementNo = S.get_totalNo() / spacesNo; // initialize average size of space
         Remain = S.get_totalNo() % spacesNo;
         SortedSurf = new MinMaxRMS(S);
@@ -397,6 +451,9 @@ class MinMaxRMSEncoder extends Encoder {
 
     }
 
+    /**
+     * <p>Building a tree out of pairs with characters and corresponding range boundaries</p>
+     */
     void InText() {
         // building a tree out of pairs <Character,BoundOfSpace>
         ContinuousSplitBT tree = new ContinuousSplitBT();

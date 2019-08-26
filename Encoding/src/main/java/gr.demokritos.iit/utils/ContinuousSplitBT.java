@@ -18,9 +18,17 @@ package gr.demokritos.iit.utils;
 
 import java.util.Vector;
 
-// used for spaces that dont spread evenly around 0
+/**
+ * <p>Class used for dividing ranges that don't spread evenly around 0</p>
+ */
 public class ContinuousSplitBT extends BinaryTree {
-    public Character search(Double height) { // match <height> to the character corresponding to space H
+    /**
+     * <p>Matches <i>height</i> to the character corresponding to space H</p>
+     *
+     * @param height        Value to be placed in a range
+     * @return              Character that corresponds to particular range
+     */
+    public Character search(Double height) {
         // where <height> belongs to H
         Character tempVal = root.Space.getKey();
         Node temp = root;
@@ -56,6 +64,11 @@ public class ContinuousSplitBT extends BinaryTree {
         return tempVal;
     }
 
+    /**
+     * <p>Print elements of tree with preorder traversal</p>
+     *
+     * @param V     Vector to be sorted and traversed
+     */
     public void print(Vector V) {
         BinaryTree tree = new ContinuousSplitBT();
         int n = V.size();

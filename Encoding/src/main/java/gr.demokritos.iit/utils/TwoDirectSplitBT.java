@@ -18,8 +18,17 @@ package gr.demokritos.iit.utils;
 
 import java.util.Vector;
 
+/**
+ * <p>Split space range into zones directly</p>
+ */
 public class TwoDirectSplitBT extends BinaryTree {
-    public Character search(Double height) { // match <height> to the character corresponding to space H
+    /**
+     * <p>Matches <i>height</i> to the character corresponding to space H</p>
+     *
+     * @param height        Value to be placed in binary range tree
+     * @return              Corresponding character
+     */
+    public Character search(Double height) {
         // where <height> belongs to H
         Character tempVal = 'A';
         Node temp;
@@ -57,6 +66,11 @@ public class TwoDirectSplitBT extends BinaryTree {
         return tempVal;
     }
 
+    /**
+     * <p>Print elements of tree with preorder traversal</p>
+     *
+     * @param V     Vector to be sorted and traversed
+     */
     public void print(Vector V) {
         BinaryTree tree = new TwoDirectSplitBT();
         int n = V.size();

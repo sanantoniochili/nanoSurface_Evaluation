@@ -23,17 +23,50 @@ import java.util.Vector;
 
 import static java.lang.Math.abs;
 
+/**
+ * Class that represents the bit of nano-surface to examine.
+ * <br>Each Surface refers to a square part of physical surface that has gone through sampling of its heights.
+ * Consequently, each object is defined by a number N of points on each square side and NxN in total.
+ * <br>It also carries all necessary fields that characterize the height distribution of the surface's points.
+ */
 public class Surface {
 
-    int TotalElementNo; // total number of surface points
-    int N; // number of surface points (along square side)
+    /**
+     * Total number of surface points
+     */
+    int TotalElementNo;
+    /**
+     * Number of surface points (along square side)
+     */
+    int N;
 
+    /**
+     * Root Mean Square Height
+     */
     double rms;
+    /**
+     * Correlation length on x axis
+     */
     double clx;
+    /**
+     * Correlation length on y axis
+     */
     double cly;
 
-    Vector<Pair<Integer,Double>> points; // save points as pairs of <index,height>
+    /**
+     * Save points as pairs of (<i>index</i>,<i>height</i>)
+     */
+    Vector<Pair<Integer,Double>> points;
 
+    /**
+     * <p>Initialization</p>
+     *
+     * @param rms       Root Mean Square Height
+     * @param clx       Correlation length x
+     * @param cly       Correlation length y (<i>optional</i>)
+     * @param total     Total number of elements
+     * @param side      Number of elements on square side
+     */
     public Surface(double rms, double clx, double cly, int total, int side) {
         this.rms = rms;
         this.clx = clx;
@@ -44,6 +77,11 @@ public class Surface {
         points = new Vector<>(total);
     }
 
+    /**
+     * <p>Copy surface</p>
+     *
+     * @param S         Surface instance
+     */
     public Surface(Surface S) {
         this.rms = S.rms;
         this.clx = S.clx;
@@ -54,11 +92,20 @@ public class Surface {
         points = new Vector<>(S.points);
     }
 
+    /**
+     * <p>Add a height point of the surface into the structure</p>
+     *
+     * @param i     Point id
+     * @param z     Height of point on surface
+     */
     public void add_height(int i, Double z) {
         Pair p = new Pair(i,z);
         points.addElement(p);
     }
 
+    /**
+     * <p>Sort heights of surface</p>
+     */
     public void sort_heights() {
         Collections.sort(points, new Comparator<Pair<Integer, Double>>() {
             @Override
@@ -68,12 +115,18 @@ public class Surface {
         });
     }
 
+    /**
+     * <p>Print saved heights of surface points</p>
+     */
     public void print_heights() {
         for(int i=0; i < TotalElementNo; i++){
             System.out.println("value: "+points.get(i).getValue()+" index: "+points.get(i).getKey());
         }
     }
 
+    /**
+     * @return      Total number of points
+     */
     public int get_totalNo() {
         return TotalElementNo;
     }
