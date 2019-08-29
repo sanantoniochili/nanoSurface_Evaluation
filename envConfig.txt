@@ -1,0 +1,27 @@
+Intellij Config
+
+For producing surface:
+Module SDK 1.8.0
+Java version 8
+Bytecode version 8
+
+For rest:
+Module SDK 11
+Java version 11
+Bytecode version 11
+
+Make sure the following dependency is included:
+<dependencies>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>11</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>11</version>
+    </dependency>
+</dependencies>
+
+add jinsect and openjgraph jars

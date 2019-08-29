@@ -29,6 +29,18 @@ output file(.cvs) format: rms:<value>,clx:\<value>,cly:\<value>,N:\<value>,(\<he
 The results are a matrix of heights corresponding to the surface points.
 Use standard input to invoke 3D surface plotter.
 
+### Example run with result on command line and 3D plotting:
+
+```
+java ProduceSurface -N 512 -rL 100 -h 8 -clx 8 -cly 8 
+```
+
+### Example run with file input and  result in file:
+```
+java ProduceSurface -N 512 -in <input_file>.csv -out <ouptut_file>.csv
+```
+
+
 ## Encoding
 
 Application to encode heights to letters of the Latin alphabet using the first oneof the methods suggested in file "Encodings.pdf".
@@ -53,6 +65,18 @@ output file(.txt) format: ((\<letter>)*\<blankline>(\<letter>)*)*
 
 A text denoting a height-zone [x,y], -100nm<=x<y<=100nm for every letter.
 
+### Example run:
+
+```
+java Conversion -in <input_file>.csv -z 40 -scale 2 -method 1 -out <output_file>.txt
+```
+### Example run with output on command line:
+
+```
+java Conversion -in <input_file>.csv -z 40 -scale 2 -method 1
+```
+
+
 ## SurfToGraph
 
 Application to convert a text representing a Gaussian surface to a N Gram Graph. After the graph has been formed, we measure the graph's most important traits (degree, shortest paths etc.) in order to extract a feature vector.
@@ -65,7 +89,19 @@ A ".txt" file containing texts that correspond to encoded surfaces. Texts are se
 
 [OUTPUT]
 
-N gram graphs produced by the texts provided.
+A ".csv" file containing characteristics of the N gram graphs produced by the texts provided.
+
+### Example run:
+
+```
+java Conversion -in <input_file>.txt -out <output_file>.csv
+```
+### Example run with output on command line:
+
+```
+java Conversion -in <input_file>.txt
+```
+
 
 ## regression.py
 

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"gr.demokritos.iit.s2graph.ngramgraphs","l":"JGraphTWrapper"},{"p":"gr.demokritos.iit.s2graph.ngramgraphs","l":"Main"},{"p":"gr.demokritos.iit.s2graph.ngramgraphs","l":"TextReader"}]
